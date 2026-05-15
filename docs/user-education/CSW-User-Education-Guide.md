@@ -37,7 +37,61 @@ CSW is not just a firewall rule tool. It is an application dependency mapping, w
 
 ---
 
-## 2. Why Customers Care
+## 2. What CSW Solves: Lateral Movement and Ransomware
+
+Cisco Secure Workload exists to break the assumption that an attacker who gets inside the network can move freely. Most enterprise networks are still relatively flat at the workload layer — once one server is compromised through a phishing link, an exposed admin port, a vulnerable web app, or a stolen credential, the attacker can usually reach hundreds of other servers, file shares, and databases over the same internal network paths that legitimate applications use.
+
+CSW reduces the **blast radius** of an intrusion by limiting each workload to **only the communication it actually needs**, based on real observed application behavior.
+
+### 2.1 The Lateral Movement Problem
+
+After initial access, modern attackers and most ransomware operators follow a predictable pattern:
+
+1. **Land on one workload** — phishing, exposed RDP / SSH, exploited service, supply chain.
+2. **Discover the internal network** — port scans, SMB enumeration, Active Directory reconnaissance.
+3. **Steal credentials** — Mimikatz, LSASS dumps, Kerberoasting.
+4. **Move laterally** — RDP, SMB, WinRM, WMI, PsExec, SSH, RPC, and other lateral admin tools.
+5. **Escalate to high-value targets** — domain controllers, backup servers, file servers, databases, hypervisors.
+6. **Stage and detonate the payload** — ransomware, data exfiltration, destruction.
+
+Steps 2 through 5 **all depend on the network allowing workload-to-workload traffic that no business application actually requires**. That is exactly the layer CSW controls.
+
+### 2.2 How CSW Stops or Slows Ransomware
+
+Ransomware groups make money by encrypting many systems in a short time window. They depend on:
+
+- Unrestricted **SMB / file share access** between workstations and servers.
+- Open **RDP / WinRM / WMI / PsExec** paths between servers.
+- Reachable **backup servers, file servers, and hypervisors** from compromised endpoints.
+- Free **east-west traffic** that lets the malware fan out before defenders can react.
+
+CSW directly attacks each of those preconditions:
+
+| Ransomware behavior | What CSW does about it |
+|---|---|
+| SMB / RDP / WinRM fan-out from a compromised workload | Allow only application-required ports between specific workload groups; deny lateral admin protocols by default. |
+| Mass file-share encryption | Restrict file-server access to the specific workloads, users, and processes that genuinely need it. |
+| Reaching backup or recovery systems | Place backup servers in their own scope; permit traffic only from backup agents, not from general workloads. |
+| Reaching domain controllers or identity tier | Scope the identity / Active Directory tier so only required clients and admin jump hosts can reach it. |
+| Hopping between application tiers | Enforce per-app and per-tier policy (web → app → database) so a compromised web tier cannot reach unrelated databases. |
+| Spreading from dev / test / lab into prod | Hard-segment prod from non-prod so a non-prod compromise cannot pivot into prod. |
+| Long undetected dwell time | Surface every blocked or anomalous flow as evidence for SOC and incident response. |
+
+The result is that **ransomware that lands on one workload finds the network around it almost empty**: the protocols it needs to spread are blocked by policy, and every attempt is logged.
+
+### 2.3 Why We Need It
+
+- **Flat networks no longer match the threat model.** Perimeter firewalls do not stop an attacker who is already inside.
+- **Identity-based and EDR controls are necessary but not sufficient.** They catch behavior on the host. CSW removes the network paths the attacker would use between hosts.
+- **Crown-jewel applications need explicit protection.** Payments, claims, customer data, intellectual property, and backup infrastructure should not be reachable from a random user workstation or a low-tier dev server.
+- **Compliance and audit demand it.** PCI, HIPAA, SOX, and most internal security frameworks expect documented segmentation between regulated and non-regulated systems.
+- **It must not break applications.** CSW's discovery-first model (map dependencies → label workloads → model policy → enforce in stages) is what makes segmentation finally feasible in real enterprises.
+
+In one sentence: **CSW exists so that when — not if — one workload is compromised, the attacker cannot reach the next one.**
+
+---
+
+## 3. Why Customers Care
 
 Customers usually evaluate CSW because they need to reduce lateral movement risk without breaking applications. Traditional network segmentation often depends on VLANs, subnets, firewall zones, or static IP lists. That model becomes difficult when applications span data centers, public cloud, containers, and shared services.
 
@@ -52,7 +106,7 @@ CSW helps customers:
 
 ---
 
-## 3. Core CSW Concepts for Users
+## 4. Core CSW Concepts for Users
 
 | Concept | User-friendly explanation |
 |---|---|
@@ -71,7 +125,7 @@ CSW helps customers:
 
 ---
 
-## 4. CSW Video Library
+## 5. CSW Video Library
 
 > **Note:** The screenshot provided showed visible **Watch here** labels but not the actual hyperlink targets. The table below creates the video-library structure and short descriptions. Replace `URL needed` with the real links when available.
 
@@ -99,7 +153,7 @@ CSW helps customers:
 
 ---
 
-## 5. How to Explain CSW in a Customer Meeting
+## 6. How to Explain CSW in a Customer Meeting
 
 ### 30-second version
 
@@ -119,7 +173,7 @@ Most enterprises want micro-segmentation, but they hesitate because they do not 
 
 ---
 
-## 6. CSW Onboarding Runbook
+## 7. CSW Onboarding Runbook
 
 ### Phase 0 - Confirm Scope and Outcomes
 
@@ -288,7 +342,7 @@ Recommended starting labels:
 
 ---
 
-## 7. Discovery Questions
+## 8. Discovery Questions
 
 Use these questions before sizing or designing a POV:
 
@@ -310,7 +364,7 @@ Use these questions before sizing or designing a POV:
 
 ---
 
-## 8. POV Evidence Checklist
+## 9. POV Evidence Checklist
 
 | Evidence | Why it matters |
 |---|---|
@@ -333,7 +387,7 @@ Use these questions before sizing or designing a POV:
 
 ---
 
-## 9. Common Pitfalls
+## 10. Common Pitfalls
 
 | Pitfall | How to avoid it |
 |---|---|
@@ -347,7 +401,7 @@ Use these questions before sizing or designing a POV:
 
 ---
 
-## 10. Simple CSW Talk Track
+## 11. Simple CSW Talk Track
 
 Use this flow in customer conversations:
 
@@ -359,7 +413,7 @@ Use this flow in customer conversations:
 
 ---
 
-## 11. Open Items Before Publishing Final Version
+## 12. Open Items Before Publishing Final Version
 
 1. Replace all `URL needed` placeholders in the video library with real video links.
 2. Confirm whether this repo should be public, private, or internal-only.
