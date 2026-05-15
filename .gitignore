@@ -1,0 +1,21 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python build artefacts (if anyone runs build helpers locally)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Generated PDFs are kept in the repo on purpose (hand-off artefact).
+# If you want to keep PDFs out of git, uncomment the next line:
+# *.pdf
