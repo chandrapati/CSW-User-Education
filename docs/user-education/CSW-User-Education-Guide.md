@@ -54,6 +54,31 @@ After initial access, modern attackers and most ransomware operators follow a pr
 5. **Escalate to high-value targets** — domain controllers, backup servers, file servers, databases, hypervisors.
 6. **Stage and detonate the payload** — ransomware, data exfiltration, destruction.
 
+Visually, the kill chain looks like this:
+
+```
+   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
+   │ 1. Initial   │──▶│ 2. Recon &   │──▶│ 3. Credential│
+   │    Access    │   │    Enum      │   │    Theft     │
+   └──────────────┘   └──────────────┘   └──────┬───────┘
+                                                │
+       ┌────────────────────────────────────────┘
+       ▼
+   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
+   │ 4. Lateral   │──▶│ 5. Privilege │──▶│ 6. Payload   │
+   │    Movement  │   │    Escalation│   │    & Impact  │
+   └──────────────┘   └──────────────┘   └──────────────┘
+
+           ┌──────────────────────────────────────────┐
+           │ * CSW intervenes between steps 4 and 5:  │
+           │   least-privilege policy removes the     │
+           │   workload-to-workload network paths     │
+           │   these steps depend on. The attacker    │
+           │   can still land on host 1, but cannot   │
+           │   reach hosts 2..N from there.           │
+           └──────────────────────────────────────────┘
+```
+
 Steps 2 through 5 **all depend on the network allowing workload-to-workload traffic that no business application actually requires**. That is exactly the layer CSW controls.
 
 ### 2.2 How CSW Stops or Slows Ransomware
