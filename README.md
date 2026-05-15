@@ -97,9 +97,23 @@ In one sentence: **CSW exists so that when — not if — one workload is compro
 - A lightweight onboarding runbook from discovery to enforcement.
 - A checklist for what teams should collect before a CSW POV.
 
-## Video URLs
+## Video Library
 
-The current video section includes placeholder rows because the screenshot provided only showed visible **Watch here** text, not the underlying URLs. Replace `URL needed` with the actual video links when available.
+The guide includes a curated **CSW Video Library** with 31 entries grouped into seven sub-sections:
+
+| Sub-section | Coverage |
+|---|---|
+| 5.1 Core CSW Training | Foundational ten videos from the Cisco source slide (Agent Configuration Profile, Golden Image VDI, Scopes, Labels, Inventory Filters, Production / Test Risk Reduction, ADM and Policy Analysis, Policy Visual and Quick Analysis, Dynamic Workloads, Flow Analysis). |
+| 5.2 Security and Risk Reduction | Vulnerabilities and Risk Reduction, Security Dashboard, Forensics, Log4J, SSH. |
+| 5.3 Segmentation Use Cases | Terminal Services, VDI segmentation. |
+| 5.4 Secure Workload + Secure Firewall | Three-part integration series plus public and deep-dive whitepapers. |
+| 5.5 F5 / BIG-IP | APM visibility, AFM, and IPFIX configuration. |
+| 5.6 Identity, DNS, and Other Integrations | DNS, Infoblox, Algosec, ISE, FMC (via Edge / Ingest / Appliance). |
+| 5.7 Containers and Kubernetes | Agent K8s. |
+
+All entries link to YouTube unless explicitly marked otherwise (the two firewall whitepapers point to cisco.com). The guide also includes a **Suggested Watch Order** that moves a new user from foundations → agent rollout → policy → security → use cases → integrations → containers.
+
+Open `docs/user-education/CSW-User-Education-Guide.md` (or the generated `.docx` / `.pdf`) for the full table with links.
 
 ## Regenerating the Documents
 
