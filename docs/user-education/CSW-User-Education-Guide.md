@@ -539,11 +539,24 @@ Use this flow in customer conversations:
 
 ---
 
-## 13. Open Items Before Publishing Final Version
+## 13. Companion Repositories for Deeper Learning
 
-1. Replace all `URL needed` placeholders in the video library with real video links.
-2. Confirm whether this repo should be public, private, or internal-only.
-3. Confirm whether customer-specific examples should be removed or kept generic.
-4. Add official Cisco documentation links for the final user education version.
-5. Validate current release-specific support matrices before presenting platform coverage.
+This guide is the educational front door. Once a reader is comfortable with the concepts and the video library, the repositories below pick up where this guide ends. They are listed in the order most learners hit them: install agents, run the policy lifecycle, then map it all to compliance frameworks.
+
+| Repo | When you reach for it |
+|---|---|
+| [chandrapati/CSW-Agent-Installation-Guide](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Right after this guide, when it is time to actually install and operate the CSW host agent on Linux, Windows, cloud, container, or agentless workloads. |
+| [chandrapati/CSW-Policy-Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | When you move from "I understand policy" (covered here) to running the full lifecycle in a tenant: discovery (ADM) → analysis → enforcement (Monitor → Simulate → Enforce) → day-2 operations. |
+| [chandrapati/CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) | When a customer or auditor asks "how does CSW support framework X?" — covers HIPAA, SOC 2, PCI DSS v4, NIST 800-53, ISO 27001:2022, CISA ZTMM, FIPS 140, NIST 800-207/207A, DORA, NIS2, NERC CIP, TSA Pipeline, CIS Controls v8.1, NIST CSF 2.0, CMMC 2.0, and more. |
+
+For the full list of related Cisco Secure Workload repositories — including POV templates, blast-radius demo, tenant insights, and SE helpers — see the **Related Cisco Secure Workload Repositories** section in this repo's [README](../../README.md#related-cisco-secure-workload-repositories).
+
+---
+
+## 14. Open Items Before Publishing Final Version
+
+1. Confirm whether this repo should be public, private, or internal-only.
+2. Confirm whether customer-specific examples should be removed or kept generic.
+3. Add official Cisco documentation links for the final user education version.
+4. Validate current release-specific support matrices before presenting platform coverage.
 
