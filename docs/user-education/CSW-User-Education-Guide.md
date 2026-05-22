@@ -205,6 +205,8 @@ Videos are listed in the order that builds CSW skills fastest — not grouped by
 | 4 | 1 | Agent Configuration Profile | Configure agent profiles for enforcement. | [Watch](https://www.youtube.com/watch?v=4mFriUr4WHk) |
 | 5 | 2 | Golden Image VDI | VDI golden-image agent deployment. *Optional.* | [Watch](https://www.youtube.com/watch?v=LYHnU_QjKfI) |
 
+**Reference — Windows policy enforcement (WFP):** [`WFP-Design.docx`](WFP-Design.docx) — Windows Filtering Platform design; how the CSW agent enforces host policy on Windows workloads.
+
 ### 6.3 Module 3 — Visibility and dependency discovery
 
 | Watch | Catalog # | Video | Description | Link |
