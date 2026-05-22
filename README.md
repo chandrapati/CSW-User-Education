@@ -2,7 +2,9 @@
 
 **A practical, vendor-neutral learning path for understanding and explaining Cisco Secure Workload (CSW).**
 
-Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated 31-entry video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
+> **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
+
+Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **36-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
 
 > **In one sentence:** CSW exists so that when — not if — one workload is compromised, the attacker cannot reach the next one.
 
@@ -163,7 +165,7 @@ Pick the lane that matches your time and role.
 
 ## Video Library (Learning Path Order)
 
-34 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
+36 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
 
 The **Catalog #** column is the original slide numbering — use it when cross-referencing the [Phased Adoption Roadmap](#phased-adoption-roadmap) video mappings.
 

@@ -2,7 +2,7 @@
 title: "Cisco Secure Workload User Education Guide"
 subtitle: "Introduction, Video Library, and Onboarding Runbook"
 author: "Cisco Secure Workload User Education"
-date: "2026-05-14"
+date: "2026-05-22"
 ---
 
 # Cisco Secure Workload User Education Guide
@@ -10,6 +10,8 @@ date: "2026-05-14"
 ## Purpose
 
 This guide helps users understand **Cisco Secure Workload (CSW)**, use a curated video library for learning, and follow a practical onboarding runbook for discovery, deployment, application dependency mapping, policy modeling, and staged micro-segmentation enforcement.
+
+> **Disclaimer:** This guide is **not** official Cisco product documentation. It is companion learning material for customer and partner education. Validate all design, scope, and feature support against your tenant's in-product documentation and Cisco product documentation before production use.
 
 Use this as a user-friendly starting point. It is intentionally written in practical language, not as a replacement for Cisco product documentation, release notes, or design validation.
 
