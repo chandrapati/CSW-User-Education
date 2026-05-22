@@ -35,6 +35,19 @@ In simple terms, CSW answers four practical questions:
 
 CSW is not just a firewall rule tool. It is an application dependency mapping, workload labeling, policy modeling, and micro-segmentation platform. The value comes from combining telemetry, labels, policy simulation, and controlled enforcement.
 
+### 1.1 Micro-segmentation is a journey
+
+Micro-segmentation is **not** something you create once and forget. Applications change — new microservices, refactors, cloud moves, patches, and integrations all shift real dependencies. Policy must stay aligned with that change or you either block legitimate traffic or slowly reopen paths you thought were closed.
+
+CSW supports an ongoing program, not a one-off cutover:
+
+- **Keep seeing the truth** — continuous flow and process telemetry (where enabled) so dependency maps reflect production, not a point-in-time snapshot.
+- **Catch drift early** — monitor and simulation modes highlight new conversations before enforcement surprises an app owner.
+- **Adapt policy deliberately** — ADM, labels, scopes, and modeling workflows exist to update allow rules when the business legitimately changes; vulnerability and forensics layers tighten or investigate when risk changes.
+- **Operate for the long run** — change control, app-owner signoff, label sync from CMDB/cloud tags, API/CI/CD automation, and drift checks (see § 6.7 and § 8 Phase 8) are how teams sustain segmentation after the POV ends.
+
+The phased roadmap in § 5 is a **on-ramp**. Phases 4–5 and day-2 operational practices are where journey-minded teams live after initial enforcement.
+
 ---
 
 ## 2. What CSW Solves: Lateral Movement and Ransomware
@@ -174,7 +187,7 @@ Phase 5:                     ██████████ ▶       Forensics 
 | **4 — Vulnerability-Driven Risk Reduction** | Continuous from ~Week 8 | Ingest vulnerability data (scanner exports, CVE feeds). Tag workloads with risk labels (for example `risk:high`, `cve:exploitable`). Tighten policy automatically for high-risk workloads — restrict their reachable surface to admin / patch paths only until remediated. | Risk-tagged inventory, tightened policy on vulnerable workloads, security and audit evidence. | Defenders work the problems attackers actually try. When the next Log4J / Log4Shell-class CVE lands, exposure can be shrunk within the same day instead of waiting on patch cycles. |
 | **5 — Forensics and Anomaly Detection** | Continuous from ~Week 8 | Use Secure Workload forensics events, flow-pattern anomaly detection, and SIEM / SOAR integration. Build playbooks that pair policy violations with host evidence. | Forensics events, anomaly findings, SOC playbooks, IR evidence trails. | Detection compounds with segmentation. Every blocked flow becomes evidence. Mean-time-to-detect drops because workload behavior is bounded by policy. |
 
-**Key idea:** every phase is independently valuable. A customer who stops after Phase 2 still wins — ransomware fan-out is gone and prod is isolated from non-prod. A customer who reaches Phase 5 has continuous defense in depth, not a one-off project.
+**Key idea:** every phase is independently valuable. A customer who stops after Phase 2 still wins — ransomware fan-out is gone and prod is isolated from non-prod. A customer who reaches Phase 5 has continuous defense in depth — and should keep operating there, because applications and policy both keep changing (see § 1.1).
 
 ### Mapping phases to videos in the catalog
 
@@ -565,11 +578,4 @@ This guide is the educational front door. Once a reader is comfortable with the 
 For the full list of related Cisco Secure Workload repositories — including POV templates, blast-radius demo, tenant insights, and SE helpers — see the **Related Cisco Secure Workload Repositories** section in this repo's [README](../../README.md#related-cisco-secure-workload-repositories).
 
 ---
-
-## 14. Open Items Before Publishing Final Version
-
-1. Confirm whether this repo should be public, private, or internal-only.
-2. Confirm whether customer-specific examples should be removed or kept generic.
-3. Add official Cisco documentation links for the final user education version.
-4. Validate current release-specific support matrices before presenting platform coverage.
 
