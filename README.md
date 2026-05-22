@@ -188,8 +188,6 @@ Roll out telemetry collection on workloads.
 | 4 | 1 | Cisco Secure Workload: Agent Configuration Profile | Configure agent profiles to manage workload agents for security enforcement. | [Watch](https://www.youtube.com/watch?v=4mFriUr4WHk) |
 | 5 | 2 | Agent Configuration and Deployment – Golden Image VDI | Deploy agents in VDI environments using golden images. *Skip if VDI is not in scope.* | [Watch](https://www.youtube.com/watch?v=LYHnU_QjKfI) |
 
-**Reference — Windows policy enforcement (WFP):** [`WFP-Design.docx`](docs/user-education/WFP-Design.docx) — how the CSW agent uses Windows Filtering Platform (WFP) for host-level policy enforcement on Windows workloads.
-
 ### Module 3 — Visibility and dependency discovery
 
 See what talks to what — the core CSW value story.
@@ -285,7 +283,6 @@ When Kubernetes is in scope.
 | `docs/user-education/CSW-User-Education-Guide.md` | Full Markdown guide: intro, concepts, video library, onboarding runbook, discovery questions, POV evidence checklist, pitfalls, talk track. |
 | `docs/user-education/CSW-User-Education-Guide.docx` | Generated Word version of the guide. |
 | `docs/user-education/CSW-User-Education-Guide.pdf` | Generated PDF version of the guide. |
-| `docs/user-education/WFP-Design.docx` | Windows Filtering Platform (WFP) design reference — how CSW enforces policy on Windows via the agent. |
 
 The Markdown files are the source of truth for the guide. The `.docx` and `.pdf` artefacts are regenerated from Markdown — see below.
 
