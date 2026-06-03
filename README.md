@@ -4,7 +4,7 @@
 
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
 
-Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **36-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
+Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **62-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
 
 > **In one sentence:** CSW exists so that when — not if — one workload is compromised, the attacker cannot reach the next one.
 
@@ -165,7 +165,7 @@ Pick the lane that matches your time and role.
 
 ## Video Library (Learning Path Order)
 
-36 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
+62 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
 
 The **Catalog #** column is the original slide numbering — use it when cross-referencing the [Phased Adoption Roadmap](#phased-adoption-roadmap) video mappings.
 
@@ -274,6 +274,79 @@ When Kubernetes is in scope.
 | Watch | Catalog # | Video | Description | Link |
 |:---:|---:|---|---|:---:|
 | 36 | 32 | Agent K8s | Secure Workload agent in Kubernetes environments. | [Watch](https://www.youtube.com/watch?v=h9PW25UhXKs) |
+
+### Module 9 — Official Channel: Getting Started
+
+Newer overview content published directly on the [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload) (2025–2026). Use these as the most current "start here" demos.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 37 | — | Introduction to Secure Workload & Overview Demo | Current product overview and end-to-end demo — best first watch. | [Watch](https://youtu.be/8HpUkYXbHnw) |
+| 38 | — | Inventory Filters (channel version) | Official-channel refresh of inventory filtering. | [Watch](https://youtu.be/ymCB_PkFYcI) |
+
+### Module 10 — Connectors, Telemetry & Application Discovery
+
+How CSW ingests context and discovers applications before policy work.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 39 | — | Connector Overview | What connectors do and how they enrich telemetry. | [Watch](https://youtu.be/H6QxuouzeC8) |
+| 40 | — | Connector Deployment | Deploying connectors on the virtual appliances. | [Watch](https://youtu.be/H0as2ppS84Q) |
+| 41 | — | Provided Services | Built-in services on the appliances. | [Watch](https://youtu.be/2dGQ9winZwE) |
+| 42 | — | Basic Application Discovery | First-pass ADM to surface application dependencies. | [Watch](https://youtu.be/HGvtBonFiE4) |
+| 43 | — | Enhancing Application Discovery | Improve ADM fidelity with labels and context. | [Watch](https://youtu.be/4wa7PiHGUnM) |
+
+### Module 11 — Policy Lifecycle & Enforcement (deep dive)
+
+The full policy workflow from modeling through enforcement placement.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 44 | — | Policy Lifecycle | End-to-end policy lifecycle overview. | [Watch](https://youtu.be/Cm-cUwRorDc) |
+| 45 | — | Policy Validation and Analysis | Validate and analyze policy before enforcing. | [Watch](https://youtu.be/DgaZpQ0lnAI) |
+| 46 | — | Policy Ordering | How rule order affects enforcement outcomes. | [Watch](https://youtu.be/fG1Kn1C7QRM) |
+| 47 | — | Policy Enforcement Overview | How enforcement is applied across workloads. | [Watch](https://youtu.be/A8rOXQ-y4Cw) |
+| 48 | — | Where to Enforce | Choosing the right enforcement point (host / network / cloud). | [Watch](https://youtu.be/urFJyDERMFs) |
+| 49 | — | Container Enforcement | Enforce policy on containerized workloads. | [Watch](https://youtu.be/6Z_y_keYyE0) |
+| 50 | — | Windows Process-Level Enforcement | Process-aware enforcement on Windows hosts. | [Watch](https://youtu.be/frhcPHXQkNw) |
+
+### Module 12 — Security, Forensics & Alerting
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 51 | — | Security Dashboard and Forensics | Combined posture, risk, and forensic evidence walkthrough. | [Watch](https://youtu.be/PVRkzWRAa08) |
+| 52 | — | Alerting | Configure and route CSW alerts. | [Watch](https://youtu.be/RqM6vbDEDPc) |
+
+### Module 13 — Day-2 Operations & Platform Management
+
+Operate, audit, and protect the CSW platform itself.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 53 | — | Agent Operations | Manage and maintain deployed agents. | [Watch](https://youtu.be/EIqPiPgpDqc) |
+| 54 | — | Auditing | Audit trails for changes and access. | [Watch](https://youtu.be/_5K62x49c_I) |
+| 55 | — | Data Backup and Restore | Back up and restore tenant/cluster data. | [Watch](https://youtu.be/dVK0xe4RWh4) |
+| 56 | — | Federation | Multi-cluster federation for scale. | [Watch](https://youtu.be/465loG3VlZE) |
+| 57 | — | Managing Secure Workload in Security Cloud Control | SaaS management via Security Cloud Control (SCC). | [Watch](https://youtu.be/UVTkxaUJSHA) |
+| 58 | — | Global Visualization Updates | Visualization enhancements. | [Watch](https://youtu.be/kGLEKRltV2M) |
+
+### Module 14 — Integrations (newer)
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 59 | — | Secure Workload & Secure Firewall Integration Updates | Latest firewall integration updates (supersedes the 3-part series for current behavior). | [Watch](https://youtu.be/IEqbz44YvOQ) |
+
+### Module 15 — Strategy & Architecture
+
+Executive- and architecture-level framing for segmentation programs.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 60 | — | Campus and Zero Trust | Extend Zero Trust segmentation into the campus. | [Watch](https://youtu.be/hX9Q6IYcgXA) |
+| 61 | — | Enabling Consistent Multi-Cloud Security, Forensics & IR | Consistent policy and IR across multi-cloud. | [Watch](https://youtu.be/x-dMr3Kg4dg) |
+| 62 | — | How to Create a Comprehensive Zero Trust Strategy | Building an end-to-end Zero Trust strategy. | [Watch](https://youtu.be/1jvgXt906m8) |
+
+> **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. Jason Maynard's "How Hard Can It Be?" CSW series (Modules 1–8) lives on his [personal channel](https://www.youtube.com/@jasonmaynard8773); his recent uploads have shifted to Cisco Secure Access / SOC topics outside this repo's CSW scope.
 
 ## Repository Layout
 

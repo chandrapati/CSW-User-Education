@@ -203,7 +203,7 @@ Phase 5:                     ██████████ ▶       Forensics 
 
 ## 6. CSW Video Library (Learning Path Order)
 
-Videos are listed in the order that builds CSW skills fastest — not grouped by product theme. **Watch top to bottom** within each module. The **Catalog #** column matches the original Cisco slide numbering (used in § 5 phase mappings).
+Videos are listed in the order that builds CSW skills fastest — not grouped by product theme. **Watch top to bottom** within each module. The **Catalog #** column matches the original Cisco slide numbering (used in § 5 phase mappings). Modules 1–8 are the original learning-path series (Catalog #1–36); **Modules 9–15 (entries 37–62) add the newer official Cisco Secure Workload channel demos published in 2025–2026.**
 
 ### 6.1 Module 1 — Foundations
 
@@ -274,6 +274,79 @@ Videos are listed in the order that builds CSW skills fastest — not grouped by
 | 33 | 31 | ACI and CSW Integration | ACI + workload segmentation. | [Watch](https://www.youtube.com/watch?v=u7jh3Zw1hlg) |
 | 34 | 35 | Splunk Integration (SIEM) | Cisco Security Cloud App for baseline datasets, CSW → Splunk Syslog alerts, plus Splunk-driven Python against the CSW API. | [Watch](https://youtu.be/CRnkH9imTZk) |
 | 35 | 36 | CI/CD Pipeline Integration | Labels, scopes, and policies as code in git; pipeline-driven API calls keep the CSW tenant in sync. | [Watch](https://www.youtube.com/watch?v=0wsSA69ol0M) |
+
+### 6.8 Module 9 — Official Channel: Getting Started
+
+Current overview content from the [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload) (2025–2026).
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 37 | — | Introduction to Secure Workload & Overview Demo | Current end-to-end product overview — best first watch for new users. | [Watch](https://youtu.be/8HpUkYXbHnw) |
+| 38 | — | Inventory Filters (channel version) | Official-channel refresh of inventory filtering and dynamic groups. | [Watch](https://youtu.be/ymCB_PkFYcI) |
+
+### 6.9 Module 10 — Connectors, Telemetry & Application Discovery
+
+How CSW ingests external context and discovers applications before policy work begins.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 39 | — | Connector Overview | What connectors are and how they enrich telemetry with external context. | [Watch](https://youtu.be/H6QxuouzeC8) |
+| 40 | — | Connector Deployment | Deploying connectors on the Edge / Ingest virtual appliances. | [Watch](https://youtu.be/H0as2ppS84Q) |
+| 41 | — | Provided Services | Built-in services hosted on the virtual appliances. | [Watch](https://youtu.be/2dGQ9winZwE) |
+| 42 | — | Basic Application Discovery | First-pass ADM run to surface application dependencies. | [Watch](https://youtu.be/HGvtBonFiE4) |
+| 43 | — | Enhancing Application Discovery | Improve ADM fidelity using labels, context, and connector data. | [Watch](https://youtu.be/4wa7PiHGUnM) |
+
+### 6.10 Module 11 — Policy Lifecycle & Enforcement (deep dive)
+
+The full policy workflow from modeling and validation through enforcement placement.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 44 | — | Policy Lifecycle | End-to-end view of the CSW policy lifecycle. | [Watch](https://youtu.be/Cm-cUwRorDc) |
+| 45 | — | Policy Validation and Analysis | Validate and analyze policy impact before enforcing. | [Watch](https://youtu.be/DgaZpQ0lnAI) |
+| 46 | — | Policy Ordering | How rule ordering changes enforcement outcomes. | [Watch](https://youtu.be/fG1Kn1C7QRM) |
+| 47 | — | Policy Enforcement Overview | How enforcement is applied across workloads. | [Watch](https://youtu.be/A8rOXQ-y4Cw) |
+| 48 | — | Where to Enforce | Choosing host- vs network- vs cloud-based enforcement points. | [Watch](https://youtu.be/urFJyDERMFs) |
+| 49 | — | Container Enforcement | Enforce segmentation policy on containerized workloads. | [Watch](https://youtu.be/6Z_y_keYyE0) |
+| 50 | — | Windows Process-Level Enforcement | Process-aware enforcement on Windows hosts. | [Watch](https://youtu.be/frhcPHXQkNw) |
+
+### 6.11 Module 12 — Security, Forensics & Alerting
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 51 | — | Security Dashboard and Forensics | Combined posture, risk, and forensic-evidence walkthrough. | [Watch](https://youtu.be/PVRkzWRAa08) |
+| 52 | — | Alerting | Configure and route Secure Workload alerts. | [Watch](https://youtu.be/RqM6vbDEDPc) |
+
+### 6.12 Module 13 — Day-2 Operations & Platform Management
+
+Operate, audit, and protect the CSW platform itself after go-live.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 53 | — | Agent Operations | Manage and maintain deployed agents over time. | [Watch](https://youtu.be/EIqPiPgpDqc) |
+| 54 | — | Auditing | Audit trails for configuration changes and access. | [Watch](https://youtu.be/_5K62x49c_I) |
+| 55 | — | Data Backup and Restore | Back up and restore tenant / cluster data. | [Watch](https://youtu.be/dVK0xe4RWh4) |
+| 56 | — | Federation | Multi-cluster federation for scale and geo distribution. | [Watch](https://youtu.be/465loG3VlZE) |
+| 57 | — | Managing Secure Workload in Security Cloud Control | SaaS management through Security Cloud Control (SCC). | [Watch](https://youtu.be/UVTkxaUJSHA) |
+| 58 | — | Global Visualization Updates | Visualization enhancements across the platform. | [Watch](https://youtu.be/kGLEKRltV2M) |
+
+### 6.13 Module 14 — Integrations (newer)
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 59 | — | Secure Workload & Secure Firewall Integration Updates | Latest firewall integration behavior; supersedes the older 3-part series for current releases. | [Watch](https://youtu.be/IEqbz44YvOQ) |
+
+### 6.14 Module 15 — Strategy & Architecture
+
+Executive- and architecture-level framing for segmentation programs.
+
+| Watch | Catalog # | Video | Description | Link |
+|:---:|---:|---|---|:---:|
+| 60 | — | Campus and Zero Trust | Extend Zero Trust segmentation from the data center into the campus. | [Watch](https://youtu.be/hX9Q6IYcgXA) |
+| 61 | — | Enabling Consistent Multi-Cloud Security, Forensics & IR | Consistent policy, forensics, and incident response across multi-cloud. | [Watch](https://youtu.be/x-dMr3Kg4dg) |
+| 62 | — | How to Create a Comprehensive Zero Trust Strategy | Building an end-to-end Zero Trust strategy with Secure Workload. | [Watch](https://youtu.be/1jvgXt906m8) |
+
+> **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. The "How Hard Can It Be?" series in Modules 1–8 is from Jason Maynard's [personal channel](https://www.youtube.com/@jasonmaynard8773).
 
 **Splunk integration — three patterns to plan for in a POV:**
 
