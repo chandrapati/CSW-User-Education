@@ -18,7 +18,7 @@ Cisco Secure Workload is a workload visibility and micro-segmentation platform. 
 - [Video Library (Learning Path Order)](#video-library-learning-path-order)
 - [Repository Layout](#repository-layout)
 - [Regenerating the Documents](#regenerating-the-documents)
-- [Related Cisco Secure Workload Repositories](#related-cisco-secure-workload-repositories)
+- [Related Cisco Secure Workload Resources](#related-cisco-secure-workload-resources)
 
 ## Who This Repo Is For
 
@@ -384,24 +384,6 @@ soffice --headless \
 
 Keep the two steps separate (do not chain with `&&`): if `soffice` ever hangs on a profile lock, the DOCX is already on disk and you only need to retry the PDF step.
 
-## Related Cisco Secure Workload Repositories
-
-This repo is part of a family of public Cisco Secure Workload assets. Pick the one that matches the question on your desk.
-
-| Repo | Use it for |
-|---|---|
-| [chandrapati/CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) | Customer-facing compliance reports and matching SA / SE technical runbooks for 30+ frameworks (HIPAA, SOC 2, PCI DSS v4, NIST 800-53, ISO 27001:2022, CISA ZTMM, FIPS 140, NIST 800-207 / 207A, DORA, NIS2, NERC CIP, TSA Pipeline, CIS Controls v8.1, NIST CSF 2.0, CMMC 2.0, and more). |
-| [chandrapati/CSW-Agent-Installation-Guide](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Practitioner reference for installing and operating the CSW host agent across Linux, Windows, cloud, container, and agentless environments. |
-| [chandrapati/CSW-Policy-Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Practitioner guide to the CSW policy lifecycle: discovery (ADM), analysis, enforcement (Monitor → Simulate → Enforce), and day-2 operations. |
-| [chandrapati/CSW-Tenant-Insights](https://github.com/chandrapati/CSW-Tenant-Insights) | CISO and POV report flavors driven from live tenant evidence; companion to the compliance and automation repos. |
-| [chandrapati/CSW_POV_Template](https://github.com/chandrapati/CSW_POV_Template) | Reusable CSW POV toolkit — clone once per engagement. |
-| [chandrapati/csw_blast_radius_demo](https://github.com/chandrapati/csw_blast_radius_demo) | Hands-on blast-radius reduction demo. |
-| [chandrapati/CSW-SE-Helper-Repo](https://github.com/chandrapati/CSW-SE-Helper-Repo) | SE helper utilities. |
-
-Suggested reading order for a new SE / partner: **this repo → CSW-Agent-Installation-Guide → CSW-Policy-Lifecycle → CSW-Compliance-Mapping → CSW-Tenant-Insights**.
-
----
-
 ## Related Cisco Secure Workload Resources
 
 Other public repositories covering the full Cisco Secure Workload journey — from onboarding to compliance reporting:
@@ -411,10 +393,11 @@ Other public repositories covering the full Cisco Secure Workload journey — fr
 | [**csw-splunk-integration**](https://github.com/chandrapati/csw-splunk-integration) | Step-by-step CSW → Splunk integration via Syslog connector and Cisco Security Cloud App | Security operations teams |
 | [**CSW-Agent-Installation-Guide**](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Host agent install across Linux, Windows, cloud, containers, and agentless environments | Operations and deployment teams |
 | [**CSW-Policy-Lifecycle**](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Full policy lifecycle: ADM discovery → Monitor → Simulate → Enforce + day-2 ops | SE/SA and customer engineering |
-| [**CSW-Compliance-Mapping**](https://github.com/chandrapati/CSW-Compliance-Mapping) | Compliance reports for HIPAA, SOC 2, PCI DSS v4, NIST 800-53, ISO 27001, CISA ZTMM, FIPS 140 | CISO, GRC, and audit teams |
+| [**CSW-Compliance-Mapping**](https://github.com/chandrapati/CSW-Compliance-Mapping) | Compliance reports and SA/SE runbooks for 30+ frameworks (HIPAA, SOC 2, PCI DSS v4, NIST 800-53, ISO 27001, CISA ZTMM, FIPS 140, and more) | CISO, GRC, and audit teams |
 | [**CSW-Tenant-Insights**](https://github.com/chandrapati/CSW-Tenant-Insights) | CISO and POV reports generated from live tenant evidence | Executive stakeholders and POV wrap-ups |
 | [**CSW\_POV\_Template**](https://github.com/chandrapati/CSW_POV_Template) | Reusable POV engagement toolkit — clone for each new engagement | SEs running a CSW proof-of-value |
 | [**csw\_blast\_radius\_demo**](https://github.com/chandrapati/csw_blast_radius_demo) | Hands-on demo showing blast radius reduction via microsegmentation | Demo and lab environments |
+| [**CSW-SE-Helper-Repo**](https://github.com/chandrapati/CSW-SE-Helper-Repo) | SE helper utilities and scratch tooling | SEs |
 
 > **Suggested path for a new customer:**
 > CSW-User-Education → CSW-Agent-Installation-Guide → CSW-Policy-Lifecycle → csw-splunk-integration → CSW-Compliance-Mapping → CSW-Tenant-Insights
