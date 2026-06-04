@@ -422,5 +422,7 @@ Other public repositories covering the full Cisco Secure Workload journey — fr
 | [**csw_blast_radius_demo**](https://github.com/chandrapati/csw_blast_radius_demo) | Hands-on demo showing blast radius reduction via microsegmentation | Demo and lab environments |
 | [**CSW-SE-Helper-Repo**](https://github.com/chandrapati/CSW-SE-Helper-Repo) | SE helper utilities and scratch tooling | SEs |
 
+| [csw-ise-integration](https://github.com/chandrapati/csw-ise-integration) | ISE/pxGrid integration: user-identity–aware microsegmentation via pxGrid 2.0 | Identity & Zero Trust |
+
 > **Suggested path for a new customer:**
-> CSW-User-Education → CSW-Agent-Installation-Guide → **CSW-Secure-Firewall-Integration-Guide** (if firewall in scope) → CSW-Identity-Integration-Guide (if identity in scope) → CSW-Policy-Lifecycle → csw-splunk-integration → CSW-Compliance-Mapping → CSW-Operations-Toolkit
+> CSW-User-Education → CSW-Agent-Installation-Guide → **CSW-Secure-Firewall-Integration-Guide** (if firewall in scope) → CSW-Identity-Integration-Guide (if identity in scope) → CSW-Policy-Lifecycle → csw-ise-integration → csw-splunk-integration → CSW-Compliance-Mapping → CSW-Operations-Toolkit
