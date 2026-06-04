@@ -4,7 +4,7 @@
 
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
 
-Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **62-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
+Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **84-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
 
 > **In one sentence:** CSW exists so that when — not if — one workload is compromised, the attacker cannot reach the next one.
 
@@ -166,7 +166,7 @@ Pick the lane that matches your time and role.
 
 ## Video Library (Learning Path Order)
 
-62 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
+84 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**; **Module 16 covers Incident Response scenarios**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
 
 ---
 
@@ -199,6 +199,7 @@ Roll out telemetry collection on workloads.
 |---|---|
 | [Cisco Secure Workload: Agent Configuration Profile](https://www.youtube.com/watch?v=4mFriUr4WHk) | Configure agent profiles to manage workload agents for security enforcement. |
 | [Agent Configuration and Deployment – Golden Image VDI](https://www.youtube.com/watch?v=LYHnU_QjKfI) | Deploy agents in VDI environments using golden images. *Skip if VDI is not in scope.* |
+| [Windows Deep Visibility Agent Install](https://www.youtube.com/watch?v=Nsju3KePVtc) | Step-by-step Windows agent installation for deep visibility and enforcement. |
 
 ### Module 3 — Visibility and dependency discovery
 
@@ -211,6 +212,9 @@ See what talks to what — the core CSW value story.
 | [Application Dependency Mapping & Policy Analysis](https://www.youtube.com/watch?v=Jzzblea25UA) | Map application dependencies and derive microsegmentation policy. |
 | [Dynamic Workloads & Policy](https://www.youtube.com/watch?v=Aajlx7JT2G4) | Adapt policy as workloads move or scale. |
 | [Policy Visual and Quick Analysis](https://www.youtube.com/watch?v=uBxrJaVLHy4) | Visualize and analyze policy impact before enforcement. |
+| [Manual Inventory Upload (Tagging)](https://www.youtube.com/watch?v=b5cegbbA3UM) | Bulk-upload and tag workload inventory when agents are not yet deployed. |
+| [Application Dependency Mapping Discovery](https://www.youtube.com/watch?v=PZ4wNulQVek) | Run first-pass ADM to surface all application communication flows. |
+| [Application Dependency Mapping Drilling into Policies](https://www.youtube.com/watch?v=NsGuQiooziY) | Deep-dive into ADM results: drill flows into policy rules. |
 
 ### Module 4 — AI-assisted policy (after Module 3)
 
@@ -232,6 +236,8 @@ Operationalize risk reduction and incident evidence.
 | [SSH Risk Reduction](https://www.youtube.com/watch?v=RV7To1MF6Es) | Control SSH paths between workloads. |
 | [Log4J Risk Reduction](https://www.youtube.com/watch?v=FTXsWtFUJZM) | Identify and contain Log4Shell-class exposure. |
 | [Forensics](https://www.youtube.com/watch?v=ZPBcj4e6M34) | Process and flow evidence for investigations. |
+| [Software Vulnerability and Adaptive Policy](https://www.youtube.com/watch?v=MSJcNB2xtBk) | Automatically tighten policy for vulnerable workloads using CVE data. |
+| [Vulnerabilities Dashboard](https://www.youtube.com/watch?v=29-S5hl4g7M) | Explore the vulnerability dashboard: CVSS scores, workload exposure, and risk reduction. |
 
 ### Module 6 — Segmentation use cases
 
@@ -241,6 +247,11 @@ Deep dives when the customer environment matches.
 |---|---|
 | [Terminal Services Segmentation](https://www.youtube.com/watch?v=pfv42g3FJEk) | Segment RDS / Terminal Services environments. |
 | [VDI Segmentation](https://www.youtube.com/watch?v=SFVjiPQFsYA) | Segment shared golden-image VDI estates. |
+| [Security Mandate: Secured SSH Access](https://www.youtube.com/watch?v=CEIt5LZ0_98) | Enforce SSH access control across IT and SecOps workloads using policy mandates. |
+| [Shared Services Mandate: Time Services](https://www.youtube.com/watch?v=sPHxgp65Ols) | Allow NTP/time services to all datacenter resources while blocking everything else. |
+| [Web Services Mandate: Prod/Test Isolation](https://www.youtube.com/watch?v=xu78UvPXbMw) | Enforce that production and test environments cannot communicate. |
+| [Retail Web Services Mandate: Limit Web Access](https://www.youtube.com/watch?v=i9EI9FpuDeE) | Restrict outbound web access for retail workloads using scoped mandates. |
+| [Deep Dive Segmentation](https://www.youtube.com/watch?v=8zcKVLJQuzw) | Advanced segmentation walkthrough: absolute policy, catch-alls, and enforcement tuning. |
 
 ### Module 7 — Integrations (pick what matches the stack)
 
@@ -264,6 +275,7 @@ Watch only the rows relevant to the customer POV.
 | [ACI and CSW Integration](https://www.youtube.com/watch?v=u7jh3Zw1hlg) | ACI fabric policy with workload segmentation. |
 | [Splunk Integration (SIEM)](https://youtu.be/CRnkH9imTZk) | Three patterns: Cisco Security Cloud App for baseline dashboards/datasets, CSW → Splunk Syslog alerts, and Splunk-driven Python against the CSW API for arbitrary metadata. |
 | [CI/CD Pipeline Integration](https://www.youtube.com/watch?v=0wsSA69ol0M) | Treat CSW like any other declarative system: labels, scopes, and policy live in git and reach the tenant through pipeline-driven API calls. |
+| [Agentless with Firepower Threat Defence](https://www.youtube.com/watch?v=S9TFfvbiJdc) | Use FTD as an agentless telemetry source for workloads where agent install is not possible. |
 
 **Splunk integration — three patterns at a glance:**
 
@@ -323,6 +335,9 @@ The full policy workflow from modeling through enforcement placement.
 | [Where to Enforce](https://youtu.be/urFJyDERMFs) | Choosing the right enforcement point (host / network / cloud). |
 | [Container Enforcement](https://youtu.be/6Z_y_keYyE0) | Enforce policy on containerized workloads. |
 | [Windows Process-Level Enforcement](https://youtu.be/frhcPHXQkNw) | Process-aware enforcement on Windows hosts. |
+| [Policy Analysis and Enforcement](https://www.youtube.com/watch?v=NUKFwkZfdug) | Analyse policy intent vs enforcement state; identify gaps before locking down. |
+| [Quick Analysis and Absolute Policy](https://www.youtube.com/watch?v=UjdBrDLpmGg) | Use quick analysis to validate flows, then lock scope with absolute policy. |
+| [Security Incident and Absolute Policy](https://www.youtube.com/watch?v=DVrswUyuplM) | Use absolute policy to contain a scope during an active security incident. |
 
 ### Module 12 — Security, Forensics & Alerting
 
@@ -343,6 +358,8 @@ Operate, audit, and protect the CSW platform itself.
 | [Federation](https://youtu.be/465loG3VlZE) | Multi-cluster federation for scale. |
 | [Managing Secure Workload in Security Cloud Control](https://youtu.be/UVTkxaUJSHA) | SaaS management via Security Cloud Control (SCC). |
 | [Global Visualization Updates](https://youtu.be/kGLEKRltV2M) | Visualization enhancements. |
+| [Global Visualization (deep-dive)](https://www.youtube.com/watch?v=KRbnrk0ge_Q) | Detailed walkthrough of the global visualization view across all scopes. |
+| [Reports](https://www.youtube.com/watch?v=sbpEz0pU-Wc) | Generate and schedule compliance and operational reports from CSW. |
 
 ### Module 14 — Integrations (newer)
 
@@ -359,6 +376,19 @@ Executive- and architecture-level framing for segmentation programs.
 | [Campus and Zero Trust](https://youtu.be/hX9Q6IYcgXA) | Extend Zero Trust segmentation into the campus. |
 | [Enabling Consistent Multi-Cloud Security, Forensics & IR](https://youtu.be/x-dMr3Kg4dg) | Consistent policy and IR across multi-cloud. |
 | [How to Create a Comprehensive Zero Trust Strategy](https://youtu.be/1jvgXt906m8) | Building an end-to-end Zero Trust strategy. |
+| [Modern-Day Risk Reduction in Healthcare: Prescriptive-Based Policy](https://www.youtube.com/watch?v=eYbojr_h5ic) | Industry use case — applying CSW prescriptive policy to reduce healthcare workload exposure. |
+
+
+### Module 16 — Incident Response (IR Deep Dive)
+
+Use CSW forensics, flow evidence, and MITRE ATT&CK–mapped scenarios to investigate and contain incidents. Watch when a breach or suspicious behavior is under investigation.
+
+| Video | Description |
+|---|---|
+| [Incident Response: Network Traffic](https://www.youtube.com/watch?v=cqkPbdq0hzM) | Use CSW flow data and forensics to investigate suspicious network traffic during an incident. |
+| [Incident Response: T1156 — Create User](https://www.youtube.com/watch?v=ggTtqyzXaMM) | Detect and investigate MITRE ATT&CK T1156 (local account creation) with CSW process forensics. |
+| [Incident Response: T1552 — Unsecured Credentials](https://www.youtube.com/watch?v=z-8Lw5fMeNw) | Detect credential harvesting (T1552) using CSW process and flow evidence. |
+| [Incident Response: Vulnerability RDP Client](https://www.youtube.com/watch?v=dmpt3zjqrME) | Investigate an RDP-based vulnerability exploitation attempt using CSW telemetry. |
 
 > **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. Jason Maynard's "How Hard Can It Be?" CSW series (Modules 1–8) lives on his [personal channel](https://www.youtube.com/@jasonmaynard8773); his recent uploads have shifted to Cisco Secure Access / SOC topics outside this repo's CSW scope.
 
