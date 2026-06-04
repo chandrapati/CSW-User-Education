@@ -397,6 +397,7 @@ Other public repositories covering the full Cisco Secure Workload journey — fr
 | [**CSW\_POV\_Template**](https://github.com/chandrapati/CSW_POV_Template) | Reusable POV engagement toolkit — clone for each new engagement | SEs running a CSW proof-of-value |
 | [**csw\_blast\_radius\_demo**](https://github.com/chandrapati/csw_blast_radius_demo) | Hands-on demo showing blast radius reduction via microsegmentation | Demo and lab environments |
 | [**CSW-SE-Helper-Repo**](https://github.com/chandrapati/CSW-SE-Helper-Repo) | SE helper utilities and scratch tooling | SEs |
+| [**CSW-ServiceNow-Connector-Guide**](https://github.com/chandrapati/CSW-ServiceNow-Connector-Guide) | ServiceNow CMDB connector (Inventory Enrichment): setup, label usage, operations, and limits — validated against CSW 4.0 docs | SE/SA and platform/CMDB teams |
 
 > **Suggested path for a new customer:**
 > CSW-User-Education → CSW-Agent-Installation-Guide → CSW-Policy-Lifecycle → csw-splunk-integration → CSW-Compliance-Mapping
