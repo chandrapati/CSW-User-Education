@@ -16,7 +16,6 @@ Cisco Secure Workload is a workload visibility and micro-segmentation platform. 
 - [Phased Adoption Roadmap](#phased-adoption-roadmap)
 - [Quick Start: Where to Begin](#quick-start-where-to-begin)
 - [Video Library (Learning Path Order)](#video-library-learning-path-order)
-- [Secure Firewall Integration Guide (NetFlow + enforcement)](#secure-firewall-integration-guide-netflow--enforcement)
 - [Repository Layout](#repository-layout)
 - [Regenerating the Documents](#regenerating-the-documents)
 - [Related Cisco Secure Workload Resources](#related-cisco-secure-workload-resources)
@@ -269,6 +268,8 @@ Watch only the rows relevant to the customer POV.
 - **Drift detection** — a scheduled pipeline diffs live tenant state against the repo and opens a ticket when something was changed out-of-band.
 - **Built on the same API surface as Pattern 3 of the Splunk integration above** — any Python you already have for CSW becomes a pipeline step.
 
+**Cisco Secure Firewall (NSEL + FMC enforcement) — all the relevant videos are rows 20–24, 32, and 59 above.** For a full step-by-step guide covering NSEL ingest, FlexConfig, FMC connector, and enforcement validation, see [**CSW-Secure-Firewall-Integration-Guide**](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) — the complete guide is also available locally at [`docs/user-education/CSW-Secure-Firewall-Integration-Guide.md`](docs/user-education/CSW-Secure-Firewall-Integration-Guide.md).
+
 ### Module 8 — Containers and Kubernetes
 
 When Kubernetes is in scope.
@@ -349,23 +350,6 @@ Executive- and architecture-level framing for segmentation programs.
 | 62 | — | How to Create a Comprehensive Zero Trust Strategy | Building an end-to-end Zero Trust strategy. | [Watch](https://youtu.be/1jvgXt906m8) |
 
 > **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. Jason Maynard's "How Hard Can It Be?" CSW series (Modules 1–8) lives on his [personal channel](https://www.youtube.com/@jasonmaynard8773); his recent uploads have shifted to Cisco Secure Access / SOC topics outside this repo's CSW scope.
-
-## Secure Firewall Integration Guide (NetFlow + enforcement)
-
-Step-by-step companion for **Cisco Secure Firewall** with CSW — separate paths for **NSEL/NetFlow visibility** (Secure Firewall Connector on Ingest) and **policy enforcement** (FMC Connector).
-
-| Resource | Link |
-|---|---|
-| **Integration guide (Markdown)** | [**CSW-Secure-Firewall-Integration-Guide**](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) (standalone repo) |
-| Local copy in this repo | [`docs/user-education/CSW-Secure-Firewall-Integration-Guide.md`](docs/user-education/CSW-Secure-Firewall-Integration-Guide.md) |
-| Part 1 — design & architecture | [YouTube](https://youtu.be/vdHjAl48SuI) |
-| Part 2 — deployment | [YouTube](https://www.youtube.com/watch?v=xpbg3s0vrcI) |
-| Part 3 — enforcement & operations | [YouTube](https://www.youtube.com/watch?v=X65mwN7kJGg) |
-| **2025–2026 integration updates** | [YouTube](https://youtu.be/IEqbz44YvOQ) |
-| FMC + Edge / Ingest / Appliance | [YouTube](https://youtu.be/13AZ33dpCxU) |
-| Connector overview & deployment | [YouTube](https://youtu.be/H6QxuouzeC8) · [YouTube](https://youtu.be/H0as2ppS84Q) |
-| Where to enforce · Policy enforcement | [YouTube](https://youtu.be/urFJyDERMFs) · [YouTube](https://youtu.be/A8rOXQ-y4Cw) |
-| Cisco white paper | [Cisco.com](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html) |
 
 ## Repository Layout
 
