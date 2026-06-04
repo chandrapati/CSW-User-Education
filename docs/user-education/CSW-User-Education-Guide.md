@@ -256,6 +256,8 @@ Videos are listed in the order that builds CSW skills fastest — not grouped by
 
 ### 6.7 Module 7 — Integrations (POV-specific)
 
+> **Step-by-step playbook:** For NetFlow/NSEL visibility plus FMC policy enforcement on Cisco Secure Firewall, see **[CSW-Secure-Firewall-Integration-Guide](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide)** (standalone repo with full steps, videos, and POV checklist). Local copy: [CSW-Secure-Firewall-Integration-Guide.md](./CSW-Secure-Firewall-Integration-Guide.md).
+
 | Watch | Catalog # | Resource | Description | Link |
 |:---:|---:|---|---|:---:|
 | 20 | 18 | Secure Workload & Firewall Integration (Part 1) | Introduction, design, architecture. | [Watch](https://youtu.be/vdHjAl48SuI) |

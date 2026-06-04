@@ -16,6 +16,7 @@ Cisco Secure Workload is a workload visibility and micro-segmentation platform. 
 - [Phased Adoption Roadmap](#phased-adoption-roadmap)
 - [Quick Start: Where to Begin](#quick-start-where-to-begin)
 - [Video Library (Learning Path Order)](#video-library-learning-path-order)
+- [Secure Firewall Integration Guide (NetFlow + enforcement)](#secure-firewall-integration-guide-netflow--enforcement)
 - [Repository Layout](#repository-layout)
 - [Regenerating the Documents](#regenerating-the-documents)
 - [Related Cisco Secure Workload Resources](#related-cisco-secure-workload-resources)
@@ -162,6 +163,7 @@ Pick the lane that matches your time and role.
 | **30 minutes** | Add [Application Dependency Mapping & Policy Analysis](https://www.youtube.com/watch?v=Jzzblea25UA) — the primary value of CSW: discover what talks to what, then derive policy. |
 | **2 hours** | Modules 1–4 in the [Video Library](#video-library-learning-path-order) (foundations through core policy workflow). |
 | **A POV is on the table** | Skim Core CSW Training, watch [Production and Test Risk Reduction](https://www.youtube.com/watch?v=HKT18Ylt4IY) plus the integration videos that match the customer stack (firewall, F5, ISE, FMC). Then open [`docs/user-education/CSW-User-Education-Guide.md`](docs/user-education/CSW-User-Education-Guide.md) for the onboarding runbook and POV evidence checklist. |
+| **Secure Firewall + NetFlow in scope** | Start with [**CSW-Secure-Firewall-Integration-Guide**](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) — step-by-step NSEL ingest and FMC enforcement with linked YouTube videos. |
 
 ## Video Library (Learning Path Order)
 
@@ -348,12 +350,30 @@ Executive- and architecture-level framing for segmentation programs.
 
 > **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. Jason Maynard's "How Hard Can It Be?" CSW series (Modules 1–8) lives on his [personal channel](https://www.youtube.com/@jasonmaynard8773); his recent uploads have shifted to Cisco Secure Access / SOC topics outside this repo's CSW scope.
 
+## Secure Firewall Integration Guide (NetFlow + enforcement)
+
+Step-by-step companion for **Cisco Secure Firewall** with CSW — separate paths for **NSEL/NetFlow visibility** (Secure Firewall Connector on Ingest) and **policy enforcement** (FMC Connector).
+
+| Resource | Link |
+|---|---|
+| **Integration guide (Markdown)** | [**CSW-Secure-Firewall-Integration-Guide**](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) (standalone repo) |
+| Local copy in this repo | [`docs/user-education/CSW-Secure-Firewall-Integration-Guide.md`](docs/user-education/CSW-Secure-Firewall-Integration-Guide.md) |
+| Part 1 — design & architecture | [YouTube](https://youtu.be/vdHjAl48SuI) |
+| Part 2 — deployment | [YouTube](https://www.youtube.com/watch?v=xpbg3s0vrcI) |
+| Part 3 — enforcement & operations | [YouTube](https://www.youtube.com/watch?v=X65mwN7kJGg) |
+| **2025–2026 integration updates** | [YouTube](https://youtu.be/IEqbz44YvOQ) |
+| FMC + Edge / Ingest / Appliance | [YouTube](https://youtu.be/13AZ33dpCxU) |
+| Connector overview & deployment | [YouTube](https://youtu.be/H6QxuouzeC8) · [YouTube](https://youtu.be/H0as2ppS84Q) |
+| Where to enforce · Policy enforcement | [YouTube](https://youtu.be/urFJyDERMFs) · [YouTube](https://youtu.be/A8rOXQ-y4Cw) |
+| Cisco white paper | [Cisco.com](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html) |
+
 ## Repository Layout
 
 | Path | What it is |
 |---|---|
 | `README.md` | This file: intro, value story, video library in learning-path order. |
 | `docs/user-education/CSW-User-Education-Guide.md` | Full Markdown guide: intro, concepts, video library, onboarding runbook, discovery questions, POV evidence checklist, pitfalls, talk track. |
+| `docs/user-education/CSW-Secure-Firewall-Integration-Guide.md` | Step-by-step Secure Firewall NSEL ingest + FMC enforcement integration with video links. |
 | `docs/user-education/CSW-User-Education-Guide.docx` | Generated Word version of the guide. |
 | `docs/user-education/CSW-User-Education-Guide.pdf` | Generated PDF version of the guide. |
 
@@ -390,14 +410,17 @@ Other public repositories covering the full Cisco Secure Workload journey — fr
 
 | Repository | What It Covers | Best For |
 |---|---|---|
+| [**CSW-Secure-Firewall-Integration-Guide**](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) | Step-by-step NSEL ingest + FMC policy enforcement on Cisco Secure Firewall | Firewall / network teams and POVs with FTD/ASA |
+| [**CSW-Identity-Integration-Guide**](https://github.com/chandrapati/CSW-Identity-Integration-Guide) | AD, Entra ID, and DC user-identity reporting for CSW labels | Identity and AD teams |
+| [**CSW-ServiceNow-Connector-Guide**](https://github.com/chandrapati/CSW-ServiceNow-Connector-Guide) | ServiceNow inventory enrichment connector setup and operations | CMDB-driven label strategies |
 | [**csw-splunk-integration**](https://github.com/chandrapati/csw-splunk-integration) | Step-by-step CSW → Splunk integration via Syslog connector and Cisco Security Cloud App | Security operations teams |
 | [**CSW-Agent-Installation-Guide**](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Host agent install across Linux, Windows, cloud, containers, and agentless environments | Operations and deployment teams |
 | [**CSW-Policy-Lifecycle**](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Full policy lifecycle: ADM discovery → Monitor → Simulate → Enforce + day-2 ops | SE/SA and customer engineering |
 | [**CSW-Compliance-Mapping**](https://github.com/chandrapati/CSW-Compliance-Mapping) | Compliance reports and SA/SE runbooks for 30+ frameworks (HIPAA, SOC 2, PCI DSS v4, NIST 800-53, ISO 27001, CISA ZTMM, FIPS 140, and more) | CISO, GRC, and audit teams |
-| [**CSW\_POV\_Template**](https://github.com/chandrapati/CSW_POV_Template) | Reusable POV engagement toolkit — clone for each new engagement | SEs running a CSW proof-of-value |
-| [**csw\_blast\_radius\_demo**](https://github.com/chandrapati/csw_blast_radius_demo) | Hands-on demo showing blast radius reduction via microsegmentation | Demo and lab environments |
+| [**CSW_POV_Template**](https://github.com/chandrapati/CSW_POV_Template) | Reusable POV engagement toolkit — clone for each new engagement | SEs running a CSW proof-of-value |
+| [**csw-logs-check**](https://github.com/chandrapati/csw-logs-check) | Cursor skill: analyze CSW agent diagnostic bundles for enforcement timing | Host enforcement validation |
+| [**csw_blast_radius_demo**](https://github.com/chandrapati/csw_blast_radius_demo) | Hands-on demo showing blast radius reduction via microsegmentation | Demo and lab environments |
 | [**CSW-SE-Helper-Repo**](https://github.com/chandrapati/CSW-SE-Helper-Repo) | SE helper utilities and scratch tooling | SEs |
-| [**CSW-ServiceNow-Connector-Guide**](https://github.com/chandrapati/CSW-ServiceNow-Connector-Guide) | ServiceNow CMDB connector (Inventory Enrichment): setup, label usage, operations, and limits — validated against CSW 4.0 docs | SE/SA and platform/CMDB teams |
 
 > **Suggested path for a new customer:**
-> CSW-User-Education → CSW-Agent-Installation-Guide → CSW-Policy-Lifecycle → csw-splunk-integration → CSW-Compliance-Mapping
+> CSW-User-Education → CSW-Agent-Installation-Guide → **CSW-Secure-Firewall-Integration-Guide** (if firewall in scope) → CSW-Identity-Integration-Guide (if identity in scope) → CSW-Policy-Lifecycle → csw-splunk-integration → CSW-Compliance-Mapping → CSW_POV_Template
