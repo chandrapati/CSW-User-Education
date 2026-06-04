@@ -173,85 +173,85 @@ Pick the lane that matches your time and role.
 
 Learn how CSW organizes workloads before any policy work.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Cisco Secure Workload: Scopes  |  Group workloads logically for policy application and management.  |  [Watch](https://www.youtube.com/watch?v=3KBmanCNm4U)  |
-|  Cisco Secure Workload: Labels  |  Tag workloads for granular policy enforcement and visibility.  |  [Watch](https://www.youtube.com/watch?v=NLoZq0wiTU8)  |
-|  Cisco Secure Workload: Inventory Filters  |  Filter inventory to focus on specific workloads or groups.  |  [Watch](https://www.youtube.com/watch?v=fJd6V15UiZM)  |
+| Video | Description |
+|---|---|
+| [Cisco Secure Workload: Scopes](https://www.youtube.com/watch?v=3KBmanCNm4U) | Group workloads logically for policy application and management. |
+| [Cisco Secure Workload: Labels](https://www.youtube.com/watch?v=NLoZq0wiTU8) | Tag workloads for granular policy enforcement and visibility. |
+| [Cisco Secure Workload: Inventory Filters](https://www.youtube.com/watch?v=fJd6V15UiZM) | Filter inventory to focus on specific workloads or groups. |
 
 ### Module 2 — Agent deployment
 
 Roll out telemetry collection on workloads.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Cisco Secure Workload: Agent Configuration Profile  |  Configure agent profiles to manage workload agents for security enforcement.  |  [Watch](https://www.youtube.com/watch?v=4mFriUr4WHk)  |
-|  Agent Configuration and Deployment – Golden Image VDI  |  Deploy agents in VDI environments using golden images. *Skip if VDI is not in scope.*  |  [Watch](https://www.youtube.com/watch?v=LYHnU_QjKfI)  |
+| Video | Description |
+|---|---|
+| [Cisco Secure Workload: Agent Configuration Profile](https://www.youtube.com/watch?v=4mFriUr4WHk) | Configure agent profiles to manage workload agents for security enforcement. |
+| [Agent Configuration and Deployment – Golden Image VDI](https://www.youtube.com/watch?v=LYHnU_QjKfI) | Deploy agents in VDI environments using golden images. *Skip if VDI is not in scope.* |
 
 ### Module 3 — Visibility and dependency discovery
 
 See what talks to what — the core CSW value story.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Production and Test Risk Reduction  |  Macro-segment prod vs non-prod — fast blast-radius win.  |  [Watch](https://www.youtube.com/watch?v=HKT18Ylt4IY)  |
-|  Flow Analysis  |  Understand traffic patterns and anomalies from observed flows.  |  [Watch](https://www.youtube.com/watch?v=Tuw06kPjeyQ)  |
-|  Application Dependency Mapping & Policy Analysis  |  Map application dependencies and derive microsegmentation policy.  |  [Watch](https://www.youtube.com/watch?v=Jzzblea25UA)  |
-|  Dynamic Workloads & Policy  |  Adapt policy as workloads move or scale.  |  [Watch](https://www.youtube.com/watch?v=Aajlx7JT2G4)  |
-|  Policy Visual and Quick Analysis  |  Visualize and analyze policy impact before enforcement.  |  [Watch](https://www.youtube.com/watch?v=uBxrJaVLHy4)  |
+| Video | Description |
+|---|---|
+| [Production and Test Risk Reduction](https://www.youtube.com/watch?v=HKT18Ylt4IY) | Macro-segment prod vs non-prod — fast blast-radius win. |
+| [Flow Analysis](https://www.youtube.com/watch?v=Tuw06kPjeyQ) | Understand traffic patterns and anomalies from observed flows. |
+| [Application Dependency Mapping & Policy Analysis](https://www.youtube.com/watch?v=Jzzblea25UA) | Map application dependencies and derive microsegmentation policy. |
+| [Dynamic Workloads & Policy](https://www.youtube.com/watch?v=Aajlx7JT2G4) | Adapt policy as workloads move or scale. |
+| [Policy Visual and Quick Analysis](https://www.youtube.com/watch?v=uBxrJaVLHy4) | Visualize and analyze policy impact before enforcement. |
 
 ### Module 4 — AI-assisted policy (after Module 3)
 
 Accelerate policy creation once the manual workflow is clear.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  AI-Driven Policy Suggestions  |  AI-generated policy recommendations from observed behavior.  |  [Watch](https://www.youtube.com/watch?v=UwUJnEMZoTk)  |
-|  Policy Statistics with Cisco Workloads AI Engine  |  Policy statistics, anomalies, and tuning insights at scale.  |  [Watch](https://www.youtube.com/watch?v=kvnAoT5ZYXl)  |
+| Video | Description |
+|---|---|
+| [AI-Driven Policy Suggestions](https://www.youtube.com/watch?v=UwUJnEMZoTk) | AI-generated policy recommendations from observed behavior. |
+| [Policy Statistics with Cisco Workloads AI Engine](https://www.youtube.com/watch?v=kvnAoT5ZYXl) | Policy statistics, anomalies, and tuning insights at scale. |
 
 ### Module 5 — Security, risk, and forensics
 
 Operationalize risk reduction and incident evidence.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Security Dashboard  |  Posture, risk indicators, and drill-downs.  |  [Watch](https://www.youtube.com/watch?v=_faK3p9tN4A)  |
-|  Vulnerabilities and Risk Reduction  |  Prioritize and reduce exposure on vulnerable workloads.  |  [Watch](https://www.youtube.com/watch?v=l7LwZHXBYUA)  |
-|  SSH Risk Reduction  |  Control SSH paths between workloads.  |  [Watch](https://www.youtube.com/watch?v=RV7To1MF6Es)  |
-|  Log4J Risk Reduction  |  Identify and contain Log4Shell-class exposure.  |  [Watch](https://www.youtube.com/watch?v=FTXsWtFUJZM)  |
-|  Forensics  |  Process and flow evidence for investigations.  |  [Watch](https://www.youtube.com/watch?v=ZPBcj4e6M34)  |
+| Video | Description |
+|---|---|
+| [Security Dashboard](https://www.youtube.com/watch?v=_faK3p9tN4A) | Posture, risk indicators, and drill-downs. |
+| [Vulnerabilities and Risk Reduction](https://www.youtube.com/watch?v=l7LwZHXBYUA) | Prioritize and reduce exposure on vulnerable workloads. |
+| [SSH Risk Reduction](https://www.youtube.com/watch?v=RV7To1MF6Es) | Control SSH paths between workloads. |
+| [Log4J Risk Reduction](https://www.youtube.com/watch?v=FTXsWtFUJZM) | Identify and contain Log4Shell-class exposure. |
+| [Forensics](https://www.youtube.com/watch?v=ZPBcj4e6M34) | Process and flow evidence for investigations. |
 
 ### Module 6 — Segmentation use cases
 
 Deep dives when the customer environment matches.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Terminal Services Segmentation  |  Segment RDS / Terminal Services environments.  |  [Watch](https://www.youtube.com/watch?v=pfv42g3FJEk)  |
-|  VDI Segmentation  |  Segment shared golden-image VDI estates.  |  [Watch](https://www.youtube.com/watch?v=SFVjiPQFsYA)  |
+| Video | Description |
+|---|---|
+| [Terminal Services Segmentation](https://www.youtube.com/watch?v=pfv42g3FJEk) | Segment RDS / Terminal Services environments. |
+| [VDI Segmentation](https://www.youtube.com/watch?v=SFVjiPQFsYA) | Segment shared golden-image VDI estates. |
 
 ### Module 7 — Integrations (pick what matches the stack)
 
 Watch only the rows relevant to the customer POV.
 
-| Resource | Description | Link |
-|---|---|:---:|
-|  Secure Workload & Firewall Integration (Part 1)  |  Introduction, design, and architecture.  |  [Watch](https://youtu.be/vdHjAl48SuI)  |
-|  Secure Workload & Firewall Integration (Part 2)  |  Deployment patterns and policy flow.  |  [Watch](https://www.youtube.com/watch?v=xpbg3s0vrcI)  |
-|  Secure Workload & Firewall Integration (Part 3)  |  Enforcement, telemetry, and operations.  |  [Watch](https://www.youtube.com/watch?v=X65mwN7kJGg&t=53s)  |
-|  Secure Workload and Secure Firewall White Paper  |  Joint architecture reference (Cisco.com).  |  [Read](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html)  |
-|  Secure Workload & Firewall Integration Deep Dive  |  Design principles and use cases.  |  [Read](https://secure.cisco.com/secure-workload/docs/secure-workload-whitepaper)  |
-|  F5 BIG-IP and Cisco Tetration: APM Visibility  |  F5 APM data for application visibility.  |  [Watch](https://www.youtube.com/watch?v=dqbWhvFNsso&t=90s)  |
-|  Cisco Tetration and F5 BIG-IP AFM  |  F5 AFM flow context integration.  |  [Watch](https://www.youtube.com/watch?v=HcF3yQHmeXc)  |
-|  F5 BIG-IP IPFIX Configuration  |  Send IPFIX from BIG-IP into Secure Workload.  |  [Watch](https://www.youtube.com/watch?v=aJZEcZtUXDg)  |
-|  DNS Server Integration  |  DNS context for flow attribution and policy.  |  [Watch](https://www.youtube.com/watch?v=hD0WpBRLCiM)  |
-|  Infoblox Integration  |  Infoblox DNS / IPAM context in CSW.  |  [Watch](https://www.youtube.com/watch?v=gdhMWviAZig)  |
-|  Algosec Integration  |  Firewall-policy lifecycle alongside CSW.  |  [Watch](https://www.youtube.com/watch?v=FUyESTLLZE8)  |
-|  ISE (In Action)  |  User and device identity from Cisco ISE.  |  [Watch](https://www.youtube.com/watch?v=KUJfuuhP1dc)  |
-|  FMC Integration with Edge / Ingest / Appliance  |  FMC through Edge, Ingest, and appliance paths.  |  [Watch](https://youtu.be/13AZ33dpCxU)  |
-|  ACI and CSW Integration  |  ACI fabric policy with workload segmentation.  |  [Watch](https://www.youtube.com/watch?v=u7jh3Zw1hlg)  |
-|  Splunk Integration (SIEM)  |  Three patterns: Cisco Security Cloud App for baseline dashboards/datasets, CSW → Splunk Syslog alerts, and Splunk-driven Python against the CSW API for arbitrary metadata.  |  [Watch](https://youtu.be/CRnkH9imTZk)  |
-|  CI/CD Pipeline Integration  |  Treat CSW like any other declarative system: labels, scopes, and policy live in git and reach the tenant through pipeline-driven API calls.  |  [Watch](https://www.youtube.com/watch?v=0wsSA69ol0M)  |
+| Video | Description |
+|---|---|
+| [Secure Workload & Firewall Integration (Part 1)](https://youtu.be/vdHjAl48SuI) | Introduction, design, and architecture. |
+| [Secure Workload & Firewall Integration (Part 2)](https://www.youtube.com/watch?v=xpbg3s0vrcI) | Deployment patterns and policy flow. |
+| [Secure Workload & Firewall Integration (Part 3)](https://www.youtube.com/watch?v=X65mwN7kJGg&t=53s) | Enforcement, telemetry, and operations. |
+| [Secure Workload and Secure Firewall White Paper](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html) | Joint architecture reference (Cisco.com). |
+| [Secure Workload & Firewall Integration Deep Dive](https://secure.cisco.com/secure-workload/docs/secure-workload-whitepaper) | Design principles and use cases. |
+| [F5 BIG-IP and Cisco Tetration: APM Visibility](https://www.youtube.com/watch?v=dqbWhvFNsso&t=90s) | F5 APM data for application visibility. |
+| [Cisco Tetration and F5 BIG-IP AFM](https://www.youtube.com/watch?v=HcF3yQHmeXc) | F5 AFM flow context integration. |
+| [F5 BIG-IP IPFIX Configuration](https://www.youtube.com/watch?v=aJZEcZtUXDg) | Send IPFIX from BIG-IP into Secure Workload. |
+| [DNS Server Integration](https://www.youtube.com/watch?v=hD0WpBRLCiM) | DNS context for flow attribution and policy. |
+| [Infoblox Integration](https://www.youtube.com/watch?v=gdhMWviAZig) | Infoblox DNS / IPAM context in CSW. |
+| [Algosec Integration](https://www.youtube.com/watch?v=FUyESTLLZE8) | Firewall-policy lifecycle alongside CSW. |
+| [ISE (In Action)](https://www.youtube.com/watch?v=KUJfuuhP1dc) | User and device identity from Cisco ISE. |
+| [FMC Integration with Edge / Ingest / Appliance](https://youtu.be/13AZ33dpCxU) | FMC through Edge, Ingest, and appliance paths. |
+| [ACI and CSW Integration](https://www.youtube.com/watch?v=u7jh3Zw1hlg) | ACI fabric policy with workload segmentation. |
+| [Splunk Integration (SIEM)](https://youtu.be/CRnkH9imTZk) | Three patterns: Cisco Security Cloud App for baseline dashboards/datasets, CSW → Splunk Syslog alerts, and Splunk-driven Python against the CSW API for arbitrary metadata. |
+| [CI/CD Pipeline Integration](https://www.youtube.com/watch?v=0wsSA69ol0M) | Treat CSW like any other declarative system: labels, scopes, and policy live in git and reach the tenant through pipeline-driven API calls. |
 
 **Splunk integration — three patterns at a glance:**
 
@@ -273,80 +273,80 @@ Watch only the rows relevant to the customer POV.
 
 When Kubernetes is in scope.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Agent K8s  |  Secure Workload agent in Kubernetes environments.  |  [Watch](https://www.youtube.com/watch?v=h9PW25UhXKs)  |
+| Video | Description |
+|---|---|
+| [Agent K8s](https://www.youtube.com/watch?v=h9PW25UhXKs) | Secure Workload agent in Kubernetes environments. |
 
 ### Module 9 — Official Channel: Getting Started
 
 Newer overview content published directly on the [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload) (2025–2026). Use these as the most current "start here" demos.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Introduction to Secure Workload & Overview Demo  |  Current product overview and end-to-end demo — best first watch.  |  [Watch](https://youtu.be/8HpUkYXbHnw)  |
-|  Inventory Filters (channel version)  |  Official-channel refresh of inventory filtering.  |  [Watch](https://youtu.be/ymCB_PkFYcI)  |
+| Video | Description |
+|---|---|
+| [Introduction to Secure Workload & Overview Demo](https://youtu.be/8HpUkYXbHnw) | Current product overview and end-to-end demo — best first watch. |
+| [Inventory Filters (channel version)](https://youtu.be/ymCB_PkFYcI) | Official-channel refresh of inventory filtering. |
 
 ### Module 10 — Connectors, Telemetry & Application Discovery
 
 How CSW ingests context and discovers applications before policy work.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Connector Overview  |  What connectors do and how they enrich telemetry.  |  [Watch](https://youtu.be/H6QxuouzeC8)  |
-|  Connector Deployment  |  Deploying connectors on the virtual appliances.  |  [Watch](https://youtu.be/H0as2ppS84Q)  |
-|  Provided Services  |  Built-in services on the appliances.  |  [Watch](https://youtu.be/2dGQ9winZwE)  |
-|  Basic Application Discovery  |  First-pass ADM to surface application dependencies.  |  [Watch](https://youtu.be/HGvtBonFiE4)  |
-|  Enhancing Application Discovery  |  Improve ADM fidelity with labels and context.  |  [Watch](https://youtu.be/4wa7PiHGUnM)  |
+| Video | Description |
+|---|---|
+| [Connector Overview](https://youtu.be/H6QxuouzeC8) | What connectors do and how they enrich telemetry. |
+| [Connector Deployment](https://youtu.be/H0as2ppS84Q) | Deploying connectors on the virtual appliances. |
+| [Provided Services](https://youtu.be/2dGQ9winZwE) | Built-in services on the appliances. |
+| [Basic Application Discovery](https://youtu.be/HGvtBonFiE4) | First-pass ADM to surface application dependencies. |
+| [Enhancing Application Discovery](https://youtu.be/4wa7PiHGUnM) | Improve ADM fidelity with labels and context. |
 
 ### Module 11 — Policy Lifecycle & Enforcement (deep dive)
 
 The full policy workflow from modeling through enforcement placement.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Policy Lifecycle  |  End-to-end policy lifecycle overview.  |  [Watch](https://youtu.be/Cm-cUwRorDc)  |
-|  Policy Validation and Analysis  |  Validate and analyze policy before enforcing.  |  [Watch](https://youtu.be/DgaZpQ0lnAI)  |
-|  Policy Ordering  |  How rule order affects enforcement outcomes.  |  [Watch](https://youtu.be/fG1Kn1C7QRM)  |
-|  Policy Enforcement Overview  |  How enforcement is applied across workloads.  |  [Watch](https://youtu.be/A8rOXQ-y4Cw)  |
-|  Where to Enforce  |  Choosing the right enforcement point (host / network / cloud).  |  [Watch](https://youtu.be/urFJyDERMFs)  |
-|  Container Enforcement  |  Enforce policy on containerized workloads.  |  [Watch](https://youtu.be/6Z_y_keYyE0)  |
-|  Windows Process-Level Enforcement  |  Process-aware enforcement on Windows hosts.  |  [Watch](https://youtu.be/frhcPHXQkNw)  |
+| Video | Description |
+|---|---|
+| [Policy Lifecycle](https://youtu.be/Cm-cUwRorDc) | End-to-end policy lifecycle overview. |
+| [Policy Validation and Analysis](https://youtu.be/DgaZpQ0lnAI) | Validate and analyze policy before enforcing. |
+| [Policy Ordering](https://youtu.be/fG1Kn1C7QRM) | How rule order affects enforcement outcomes. |
+| [Policy Enforcement Overview](https://youtu.be/A8rOXQ-y4Cw) | How enforcement is applied across workloads. |
+| [Where to Enforce](https://youtu.be/urFJyDERMFs) | Choosing the right enforcement point (host / network / cloud). |
+| [Container Enforcement](https://youtu.be/6Z_y_keYyE0) | Enforce policy on containerized workloads. |
+| [Windows Process-Level Enforcement](https://youtu.be/frhcPHXQkNw) | Process-aware enforcement on Windows hosts. |
 
 ### Module 12 — Security, Forensics & Alerting
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Security Dashboard and Forensics  |  Combined posture, risk, and forensic evidence walkthrough.  |  [Watch](https://youtu.be/PVRkzWRAa08)  |
-|  Alerting  |  Configure and route CSW alerts.  |  [Watch](https://youtu.be/RqM6vbDEDPc)  |
+| Video | Description |
+|---|---|
+| [Security Dashboard and Forensics](https://youtu.be/PVRkzWRAa08) | Combined posture, risk, and forensic evidence walkthrough. |
+| [Alerting](https://youtu.be/RqM6vbDEDPc) | Configure and route CSW alerts. |
 
 ### Module 13 — Day-2 Operations & Platform Management
 
 Operate, audit, and protect the CSW platform itself.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Agent Operations  |  Manage and maintain deployed agents.  |  [Watch](https://youtu.be/EIqPiPgpDqc)  |
-|  Auditing  |  Audit trails for changes and access.  |  [Watch](https://youtu.be/_5K62x49c_I)  |
-|  Data Backup and Restore  |  Back up and restore tenant/cluster data.  |  [Watch](https://youtu.be/dVK0xe4RWh4)  |
-|  Federation  |  Multi-cluster federation for scale.  |  [Watch](https://youtu.be/465loG3VlZE)  |
-|  Managing Secure Workload in Security Cloud Control  |  SaaS management via Security Cloud Control (SCC).  |  [Watch](https://youtu.be/UVTkxaUJSHA)  |
-|  Global Visualization Updates  |  Visualization enhancements.  |  [Watch](https://youtu.be/kGLEKRltV2M)  |
+| Video | Description |
+|---|---|
+| [Agent Operations](https://youtu.be/EIqPiPgpDqc) | Manage and maintain deployed agents. |
+| [Auditing](https://youtu.be/_5K62x49c_I) | Audit trails for changes and access. |
+| [Data Backup and Restore](https://youtu.be/dVK0xe4RWh4) | Back up and restore tenant/cluster data. |
+| [Federation](https://youtu.be/465loG3VlZE) | Multi-cluster federation for scale. |
+| [Managing Secure Workload in Security Cloud Control](https://youtu.be/UVTkxaUJSHA) | SaaS management via Security Cloud Control (SCC). |
+| [Global Visualization Updates](https://youtu.be/kGLEKRltV2M) | Visualization enhancements. |
 
 ### Module 14 — Integrations (newer)
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Secure Workload & Secure Firewall Integration Updates  |  Latest firewall integration updates (supersedes the 3-part series for current behavior).  |  [Watch](https://youtu.be/IEqbz44YvOQ)  |
+| Video | Description |
+|---|---|
+| [Secure Workload & Secure Firewall Integration Updates](https://youtu.be/IEqbz44YvOQ) | Latest firewall integration updates (supersedes the 3-part series for current behavior). |
 
 ### Module 15 — Strategy & Architecture
 
 Executive- and architecture-level framing for segmentation programs.
 
-| Video | Description | Link |
-|---|---|:---:|
-|  Campus and Zero Trust  |  Extend Zero Trust segmentation into the campus.  |  [Watch](https://youtu.be/hX9Q6IYcgXA)  |
-|  Enabling Consistent Multi-Cloud Security, Forensics & IR  |  Consistent policy and IR across multi-cloud.  |  [Watch](https://youtu.be/x-dMr3Kg4dg)  |
-|  How to Create a Comprehensive Zero Trust Strategy  |  Building an end-to-end Zero Trust strategy.  |  [Watch](https://youtu.be/1jvgXt906m8)  |
+| Video | Description |
+|---|---|
+| [Campus and Zero Trust](https://youtu.be/hX9Q6IYcgXA) | Extend Zero Trust segmentation into the campus. |
+| [Enabling Consistent Multi-Cloud Security, Forensics & IR](https://youtu.be/x-dMr3Kg4dg) | Consistent policy and IR across multi-cloud. |
+| [How to Create a Comprehensive Zero Trust Strategy](https://youtu.be/1jvgXt906m8) | Building an end-to-end Zero Trust strategy. |
 
 > **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. Jason Maynard's "How Hard Can It Be?" CSW series (Modules 1–8) lives on his [personal channel](https://www.youtube.com/@jasonmaynard8773); his recent uploads have shifted to Cisco Secure Access / SOC topics outside this repo's CSW scope.
 
