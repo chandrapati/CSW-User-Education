@@ -168,6 +168,18 @@ Pick the lane that matches your time and role.
 
 62 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
 
+---
+
+### 🎬 Start Here — CSW 101 Introduction
+
+> **New to Cisco Secure Workload? Watch this first.**
+> A complete product overview and end-to-end live demo — covers what CSW is, how it discovers application dependencies, and how it enforces least-privilege policy.
+
+| Video | Description |
+|---|---|
+| [Cisco Secure Workload — Overview & Live Demo](https://www.youtube.com/watch?v=8v6BQYrO5v8&t=2s) | End-to-end product walkthrough — what CSW does, how it works, and why it matters. Best first watch before any module below. |
+
+---
 
 ### Module 1 — Foundations (start here)
 
@@ -283,7 +295,7 @@ Newer overview content published directly on the [Cisco Secure Workload YouTube 
 
 | Video | Description |
 |---|---|
-| [Introduction to Secure Workload & Overview Demo](https://youtu.be/8HpUkYXbHnw) | Current product overview and end-to-end demo — best first watch. |
+| [Introduction to Secure Workload & Overview Demo](https://youtu.be/8HpUkYXbHnw) | Current product overview and end-to-end demo from the official Cisco channel. |
 | [Inventory Filters (channel version)](https://youtu.be/ymCB_PkFYcI) | Official-channel refresh of inventory filtering. |
 
 ### Module 10 — Connectors, Telemetry & Application Discovery
