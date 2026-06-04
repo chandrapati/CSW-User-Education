@@ -3,6 +3,13 @@
 **A practical, vendor-neutral learning path for understanding and explaining Cisco Secure Workload (CSW).**
 
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
+>
+> **Video attributions:** All videos linked in this repository are the property of their respective creators and channels. Full credit to:
+> - **Jason Maynard** — ["How Hard Can It Be?" CSW series](https://www.youtube.com/@jasonmaynard8773) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (Modules 1–8, and deep-dive content in Modules 3, 5, 6, 7, 11, 13, 16)
+> - **Jorge Quintero & Jason Lunde** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15)
+> - **BarrySecure** — [BarrySecure YouTube channel](https://www.youtube.com/@BarrySecure) (CSW 101 overview demo)
+>
+> This repo curates and organizes their publicly available content into a structured learning path. No content has been reproduced or modified — all links go directly to the original videos.
 
 Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **84-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
 
@@ -390,7 +397,10 @@ Use CSW forensics, flow evidence, and MITRE ATT&CK–mapped scenarios to investi
 | [Incident Response: T1552 — Unsecured Credentials](https://www.youtube.com/watch?v=z-8Lw5fMeNw) | Detect credential harvesting (T1552) using CSW process and flow evidence. |
 | [Incident Response: Vulnerability RDP Client](https://www.youtube.com/watch?v=dmpt3zjqrME) | Investigate an RDP-based vulnerability exploitation attempt using CSW telemetry. |
 
-> **Channel note:** Modules 9–15 are sourced from the official [Cisco Secure Workload YouTube channel](https://www.youtube.com/@ciscosecureworkload), where Cisco TMEs (including Jorge Quintero and Jason Lunde) publish current product demos. Jason Maynard's "How Hard Can It Be?" CSW series (Modules 1–8) lives on his [personal channel](https://www.youtube.com/@jasonmaynard8773); his recent uploads have shifted to Cisco Secure Access / SOC topics outside this repo's CSW scope.
+> **Video credits:** All linked videos are the property of their respective creators — this repo organizes and links to their public content without modification.
+> - **Jason Maynard** ([@jasonmaynard8773](https://www.youtube.com/@jasonmaynard8773)) — "How Hard Can It Be?" CSW series (Modules 1–8) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (additional content in Modules 3, 5, 6, 7, 11, 13, 16). His recent channel uploads have shifted toward Cisco Secure Access / SOC topics.
+> - **Jorge Quintero & Jason Lunde** — Cisco TMEs publishing on the official [Cisco Secure Workload channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15). Use these for the most current product behavior.
+> - **BarrySecure** ([@BarrySecure](https://www.youtube.com/@BarrySecure)) — Cisco security practitioner demos covering CSW and the broader Cisco security portfolio (CSW 101 intro).
 
 ## Repository Layout
 
