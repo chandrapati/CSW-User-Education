@@ -402,11 +402,11 @@ Use CSW forensics, flow evidence, and MITRE ATT&CK–mapped scenarios to investi
 
 | Path | What it is |
 |---|---|
-| `README.md` | This file: intro, value story, video library in learning-path order. |
-| `docs/user-education/CSW-User-Education-Guide.md` | Full Markdown guide: intro, concepts, video library, onboarding runbook, discovery questions, POV evidence checklist, pitfalls, talk track. |
-| `docs/user-education/CSW-Secure-Firewall-Integration-Guide.md` | Step-by-step Secure Firewall NSEL ingest + FMC enforcement integration with video links. |
-| `docs/user-education/CSW-User-Education-Guide.docx` | Generated Word version of the guide. |
-| `docs/user-education/CSW-User-Education-Guide.pdf` | Generated PDF version of the guide. |
+| [`README.md`](README.md) | This file: intro, value story, video library in learning-path order. |
+| [`docs/user-education/CSW-User-Education-Guide.md`](docs/user-education/CSW-User-Education-Guide.md) | Full Markdown guide: intro, concepts, video library, onboarding runbook, discovery questions, POV evidence checklist, pitfalls, talk track. |
+| [`docs/user-education/CSW-Secure-Firewall-Integration-Guide.md`](docs/user-education/CSW-Secure-Firewall-Integration-Guide.md) | Step-by-step Secure Firewall NSEL ingest + FMC enforcement integration with video links. |
+| [`docs/user-education/CSW-User-Education-Guide.docx`](docs/user-education/CSW-User-Education-Guide.docx) | Generated Word version of the guide. |
+| [`docs/user-education/CSW-User-Education-Guide.pdf`](docs/user-education/CSW-User-Education-Guide.pdf) | Generated PDF version of the guide. |
 
 The Markdown files are the source of truth for the guide. The `.docx` and `.pdf` artefacts are regenerated from Markdown — see below.
 
