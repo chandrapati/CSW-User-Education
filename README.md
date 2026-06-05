@@ -19,6 +19,7 @@ Cisco Secure Workload is a workload visibility and micro-segmentation platform. 
 
 - [Who This Repo Is For](#who-this-repo-is-for)
 - [The Problem CSW Solves](#the-problem-csw-solves)
+- [How Cisco Secure Workload Works](#how-cisco-secure-workload-works)
 - [Micro-segmentation Is a Journey](#micro-segmentation-is-a-journey)
 - [Phased Adoption Roadmap](#phased-adoption-roadmap)
 - [Quick Start: Where to Begin](#quick-start-where-to-begin)
@@ -52,30 +53,11 @@ After initial access, modern attackers (and most ransomware operators) follow a 
 5. Escalate to high-value targets — domain controllers, backup servers, file servers, databases, hypervisors.
 6. Stage and detonate payload — ransomware, data exfiltration, destruction.
 
-Visually, the kill chain looks like this:
+Visually, here is the difference CSW makes — the *same* ransomware attack **without** micro-segmentation (it fans out and encrypts the whole estate) versus **with** Cisco Secure Workload (the breach is contained to the one workload the attacker landed on):
 
-```
-   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
-   │ 1. Initial   │──▶│ 2. Recon &   │──▶│ 3. Credential│
-   │    Access    │   │    Enum      │   │    Theft     │
-   └──────────────┘   └──────────────┘   └──────┬───────┘
-                                                │
-       ┌────────────────────────────────────────┘
-       ▼
-   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
-   │ 4. Lateral   │──▶│ 5. Privilege │──▶│ 6. Payload   │
-   │    Movement  │   │    Escalation│   │    & Impact  │
-   └──────────────┘   └──────────────┘   └──────────────┘
+![Ransomware blast radius: without micro-segmentation the entire estate is encrypted; with Cisco Secure Workload the breach is contained to a single workload](assets/csw-containment.gif)
 
-           ┌──────────────────────────────────────────┐
-           │ * CSW intervenes between steps 4 and 5:  │
-           │   least-privilege policy removes the     │
-           │   workload-to-workload network paths     │
-           │   these steps depend on. The attacker    │
-           │   can still land on host 1, but cannot   │
-           │   reach hosts 2..N from there.           │
-           └──────────────────────────────────────────┘
-```
+> **What the animation shows:** CSW intervenes between **steps 4 and 5** of the kill chain. Least-privilege policy removes the workload-to-workload network paths that recon, credential theft, lateral movement, and privilege escalation all depend on. The attacker can still land on host 1, but cannot reach hosts 2..N from there — so the blast radius is a single workload instead of the entire data center.
 
 **Steps 2 through 5 all depend on the network allowing workload-to-workload traffic that no business application actually requires.** That is exactly the layer CSW controls.
 
@@ -109,6 +91,20 @@ The result is that **ransomware that lands on one workload finds the network aro
 - **Crown-jewel applications need explicit protection.** Payments, claims, customer data, intellectual property, and backup infrastructure should not be reachable from a random user workstation or low-tier dev server.
 - **Compliance and audit demand it.** PCI, HIPAA, SOX, and most internal security frameworks expect documented segmentation between regulated and non-regulated systems. For framework-by-framework mappings — customer-facing reports and matching SA / SE technical runbooks across HIPAA, SOC 2, PCI DSS v4, NIST 800-53, ISO 27001:2022, CISA ZTMM, FIPS 140, NIST 800-207 / 207A, DORA, NIS2, NERC CIP, TSA Pipeline, CIS Controls v8.1, NIST CSF 2.0, CMMC 2.0, and more — see the companion repository: **[chandrapati/CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping)**. Use it whenever a customer asks "how does CSW map to *&lt;framework&gt;*?".
 - **It must not break applications.** CSW's discovery-first model (map dependencies → label workloads → model policy → enforce in stages) is what makes segmentation finally feasible in real enterprises.
+
+## How Cisco Secure Workload Works
+
+CSW runs one repeatable pipeline — **see everything → add context → discover the policy → prove it's safe → enforce it everywhere** — driven from a single policy “brain” with distributed enforcement at the workload (agent), the network (Cisco Secure Firewall, agentless), and the cloud (security groups):
+
+![How Cisco Secure Workload works: visibility, context, ADM discovery, analysis and simulation, then enforcement across agent, Secure Firewall, and cloud security groups](assets/csw-architecture.gif)
+
+| Stage | What happens |
+|---|---|
+| **1 · Visibility** | Agents and connectors stream every flow and process across VM, bare-metal, container, cloud, and Kubernetes workloads. |
+| **2 · Context** | Workloads are labeled from systems of record — CMDB, cloud tags, ISE, DNS — so policy is written in human terms, not IP addresses. |
+| **3 · Discovery** | ADM + machine learning auto-discover application dependencies and propose least-privilege allow-list policy. |
+| **4 · Analysis** | Policy is simulated and validated against live traffic so it won't break the application before enforcement. |
+| **5 · Enforcement** | One policy is pushed everywhere: host OS firewall (agent), Cisco Secure Firewall (agentless), and cloud security groups. |
 
 ## Micro-segmentation Is a Journey
 
