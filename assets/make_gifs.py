@@ -51,13 +51,80 @@ def ctext(d, xy, s, f, fill=WHITE, anchor="mm"):
 def _blend(a, b, t):
     return tuple(int(a[i]*(1-t)+b[i]*t) for i in range(3))
 
-def server(d, cx, cy, w, h, body, edge, glyph=GREEN):
+SHADOW = (6, 11, 20)
+
+def _shadow(d, x0, y0, x1, y1, r=12):
+    d.rounded_rectangle([x0+5, y0+6, x1+5, y1+6], radius=r, fill=SHADOW)
+
+def draw_server(d, cx, cy, w, h, body, edge, accent):
     x0, y0, x1, y1 = cx-w//2, cy-h//2, cx+w//2, cy+h//2
-    d.rounded_rectangle([x0, y0, x1, y1], radius=10, fill=body, outline=edge, width=3)
-    for i in range(3):
-        yy = y0 + 12 + i*((h-22)//3)
-        d.rounded_rectangle([x0+10, yy, x1-22, yy+5], radius=2, fill=_blend(body, WHITE, .25))
-        d.ellipse([x1-18, yy-1, x1-12, yy+5], fill=glyph)
+    _shadow(d, x0, y0, x1, y1)
+    d.rounded_rectangle([x0, y0, x1, y1], radius=12, fill=body, outline=edge, width=3)
+    d.rounded_rectangle([x0+3, y0+3, x1-3, y0+h//2-2], radius=9, fill=_blend(body, WHITE, .07))
+    # power icon (top-left)
+    d.ellipse([x0+12, y0+8, x0+24, y0+20], outline=accent, width=2)
+    d.line([x0+18, y0+6, x0+18, y0+13], fill=accent, width=2)
+    # status LEDs (top-right)
+    for k in range(3):
+        lx = x1-15-k*12
+        d.ellipse([lx-3, y0+10, lx+3, y0+16], fill=accent if k == 0 else _blend(body, accent, .45))
+    # drive bays
+    for k in range(2):
+        by = y0+32+k*18
+        d.rounded_rectangle([x0+12, by, x1-12, by+11], radius=4, fill=_blend(body, WHITE, .10), outline=_blend(body, WHITE, .20))
+        d.rounded_rectangle([x0+16, by+3, x0+32, by+8], radius=2, fill=_blend(body, WHITE, .26))
+        d.ellipse([x1-21, by+3, x1-15, by+9], fill=accent)
+
+def draw_database(d, cx, cy, w, h, body, edge, accent):
+    cw = w-42
+    x0, x1 = cx-cw//2, cx+cw//2
+    ty, by = cy-h//2+12, cy+h//2-12
+    eh = 16
+    _shadow(d, x0, ty-eh//2, x1, by+eh//2, r=eh//2)
+    d.rectangle([x0, ty, x1, by], fill=body)
+    d.line([x0, ty, x0, by], fill=edge, width=3)
+    d.line([x1, ty, x1, by], fill=edge, width=3)
+    d.ellipse([x0, by-eh//2, x1, by+eh//2], fill=body, outline=edge, width=3)
+    for f in (1, 2):
+        ry = ty + (by-ty)*f//3
+        d.arc([x0, ry-eh//2, x1, ry+eh//2], 0, 180, fill=edge, width=2)
+    d.ellipse([x0, ty-eh//2, x1, ty+eh//2], fill=_blend(body, WHITE, .12), outline=edge, width=3)
+    d.ellipse([cx-3, ty-3, cx+3, ty+3], fill=accent)
+
+def draw_container(d, cx, cy, w, h, body, edge, accent):
+    x0, y0, x1, y1 = cx-w//2, cy-h//2, cx+w//2, cy+h//2
+    _shadow(d, x0, y0, x1, y1)
+    d.rounded_rectangle([x0, y0, x1, y1], radius=12, fill=body, outline=edge, width=3)
+    # microservice tiles (2 rows x 3 cols)
+    for r in range(2):
+        for c in range(3):
+            sx = cx-31+c*31
+            sy = cy-15+r*27
+            d.rounded_rectangle([sx-11, sy-10, sx+11, sy+10], radius=3,
+                                fill=_blend(body, accent, .32), outline=accent, width=2)
+    # corner brackets
+    L = 11
+    for (bx, by, dx, dy) in [(x0+6, y0+6, 1, 1), (x1-6, y0+6, -1, 1), (x0+6, y1-6, 1, -1), (x1-6, y1-6, -1, -1)]:
+        d.line([bx, by, bx+dx*L, by], fill=accent, width=3)
+        d.line([bx, by, bx, by+dy*L], fill=accent, width=3)
+
+# workload type per grid cell (S=server, D=database, C=container)
+TYPES = ['S','D','C','S','D','C','S','D','C','S','D','C','S','D','C']
+
+def draw_workload(d, idx, cx, cy, w, h, infected):
+    body  = RED_D if infected else PANEL2
+    edge  = RED if infected else GREEN
+    accent= AMBER if infected else GREEN
+    t = TYPES[idx % len(TYPES)]
+    if t == 'D':
+        draw_database(d, cx, cy, w, h, body, edge, accent)
+    elif t == 'C':
+        draw_container(d, cx, cy, w, h, body, edge, accent)
+    else:
+        draw_server(d, cx, cy, w, h, body, edge, accent)
+    if infected:
+        d.ellipse([cx-16, cy-16, cx+16, cy+16], fill=RED, outline=WHITE, width=2)
+        draw_lock(d, cx, cy+1, 13, WHITE, RED)
 
 def badge(d, cx, cy, txt, fill, fg=WHITE, pad=7, f=None):
     f = f or bold(15)
@@ -182,11 +249,7 @@ def frame_A(infected_upto):
     draw_links(d, infected, RED_D, 5)
     for i in range(N):
         x,y=hpos(i)
-        if i in infected:
-            server(d, x, y, HW, HH, RED_D, RED, glyph=AMBER)
-            draw_lock(d, x, y, 16, WHITE, RED)
-        else:
-            server(d, x, y, HW, HH, PANEL2, GREEN, glyph=GREEN)
+        draw_workload(d, i, x, y, HW, HH, i in infected)
     if infected_upto==0: attacker(d,0)
     if infected_upto>=MAXW:
         caption(d, "One breach \u2192 the entire estate is encrypted", RED, big="RANSOMWARE FANS OUT", big_icon='warn')
@@ -200,11 +263,7 @@ def frame_B(stage):
     infected={0} if stage>=1 else set()
     for i in range(N):
         x,y=hpos(i)
-        if i in infected:
-            server(d, x, y, HW, HH, RED_D, RED, glyph=AMBER)
-            draw_lock(d, x, y, 16, WHITE, RED)
-        else:
-            server(d, x, y, HW, HH, PANEL2, GREEN, glyph=GREEN)
+        draw_workload(d, i, x, y, HW, HH, i in infected)
     draw_all_shields(d)
     if stage in (2,3):
         for j in neighbors(0):
