@@ -125,15 +125,7 @@ Treat the [phased adoption roadmap](#phased-adoption-roadmap) as a **starting pa
 
 CSW value compounds in phases. You do **not** need to wait for full Application Dependency Mapping (ADM) to get value — each phase below delivers a concrete outcome on its own, and a customer who stops after Phase 2 has already shrunk ransomware blast radius and isolated prod from non-prod.
 
-```
-Week:      0 ─── 2 ─── 4 ─── 8 ─── 12+
-
-Phase 1:   ███████                              Visibility
-Phase 2:         ███████                        Macro Segmentation
-Phase 3:               █████████████            ADM + App-Scope Micro-Segmentation
-Phase 4:                     ██████████ ▶       Vulnerability-Driven Risk Reduction
-Phase 5:                     ██████████ ▶       Forensics and Anomaly Detection
-```
+![Phased adoption roadmap: Phase 1 Visibility (weeks 0–2), Phase 2 Macro Segmentation (weeks 2–4), Phase 3 ADM-driven App micro-segmentation (weeks 4–12), and Phases 4–5 (Vulnerability-Driven Risk Reduction and Forensics & IR) running continuously from week 8 onward](assets/csw-roadmap.png)
 
 | Phase | Window | What you do | What you ship | Primary value |
 |---|---|---|---|---|
