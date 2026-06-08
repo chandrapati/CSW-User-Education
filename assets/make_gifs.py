@@ -91,17 +91,29 @@ def draw_database(d, cx, cy, w, h, body, edge, accent):
     d.ellipse([x0, ty-eh//2, x1, ty+eh//2], fill=_blend(body, WHITE, .12), outline=edge, width=3)
     d.ellipse([cx-3, ty-3, cx+3, ty+3], fill=accent)
 
-def draw_container(d, cx, cy, w, h, body, edge, accent):
+FIRE = [(255, 92, 12), (255, 140, 22), (245, 166, 35)]  # ember palette for compromised containers
+FIRE_EDGE = (255, 214, 96)
+
+def draw_container(d, cx, cy, w, h, body, edge, accent, hot=False):
     x0, y0, x1, y1 = cx-w//2, cy-h//2, cx+w//2, cy+h//2
     _shadow(d, x0, y0, x1, y1)
     d.rounded_rectangle([x0, y0, x1, y1], radius=12, fill=body, outline=edge, width=3)
-    # microservice tiles (2 rows x 3 cols)
+    # microservice tiles (2 rows x 3 cols) — ember-tinted when compromised
     for r in range(2):
         for c in range(3):
             sx = cx-31+c*31
             sy = cy-15+r*27
+            if hot:
+                tfill = FIRE[(r*3+c) % 3]
+                tedge = FIRE_EDGE
+            else:
+                tfill = _blend(body, accent, .32)
+                tedge = accent
             d.rounded_rectangle([sx-11, sy-10, sx+11, sy+10], radius=3,
-                                fill=_blend(body, accent, .32), outline=accent, width=2)
+                                fill=tfill, outline=tedge, width=2)
+            if hot:  # hot inner glow
+                d.rounded_rectangle([sx-6, sy-6, sx+6, sy+2], radius=2,
+                                    fill=_blend(tfill, (255, 240, 180), .5))
     # corner brackets
     L = 11
     for (bx, by, dx, dy) in [(x0+6, y0+6, 1, 1), (x1-6, y0+6, -1, 1), (x0+6, y1-6, 1, -1), (x1-6, y1-6, -1, -1)]:
@@ -110,6 +122,9 @@ def draw_container(d, cx, cy, w, h, body, edge, accent):
 
 # workload type per grid cell (S=server, D=database, C=container)
 TYPES = ['S','D','C','S','D','C','S','D','C','S','D','C','S','D','C']
+# small type tags under a few representative workloads (instant readability)
+LABEL_TEXT = {'S': 'VM', 'D': 'DB', 'C': 'app'}
+LABELS = {i: LABEL_TEXT[TYPES[i]] for i in (0, 1, 2, 11, 12, 13)}
 
 def draw_workload(d, idx, cx, cy, w, h, infected):
     body  = RED_D if infected else PANEL2
@@ -119,12 +134,16 @@ def draw_workload(d, idx, cx, cy, w, h, infected):
     if t == 'D':
         draw_database(d, cx, cy, w, h, body, edge, accent)
     elif t == 'C':
-        draw_container(d, cx, cy, w, h, body, edge, accent)
+        draw_container(d, cx, cy, w, h, body, edge, accent, hot=infected)
     else:
         draw_server(d, cx, cy, w, h, body, edge, accent)
     if infected:
         d.ellipse([cx-16, cy-16, cx+16, cy+16], fill=RED, outline=WHITE, width=2)
         draw_lock(d, cx, cy+1, 13, WHITE, RED)
+    lab = LABELS.get(idx)
+    if lab:
+        lc = (236, 170, 122) if infected else (170, 190, 212)
+        ctext(d, (cx, cy+h//2+9), lab, bold(11), lc)
 
 def badge(d, cx, cy, txt, fill, fg=WHITE, pad=7, f=None):
     f = f or bold(15)
