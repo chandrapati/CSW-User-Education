@@ -1,5 +1,7 @@
 # Cisco Secure Workload — User Education
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=chandrapati.CSW-User-Education&left_text=visitors)
+
 **A practical, vendor-neutral learning path for understanding and explaining Cisco Secure Workload (CSW).**
 
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
