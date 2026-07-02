@@ -287,4 +287,5 @@ If API **`flowsearch`** times out when pulling large NetFlow-derived datasets, u
 
 - [CSW-User-Education](https://github.com/chandrapati/CSW-User-Education) — this guide and video library
 - [CSW-Policy-Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) — ADM → Monitor → Enforce workflow
+- [CSW-Epic-Microsegmentation-Guide](https://github.com/chandrapati/CSW-Epic-Microsegmentation-Guide) — Epic EHR tier microsegmentation playbook (healthcare)
 - [csw-logs-check](https://github.com/chandrapati/csw-logs-check) — host agent enforcement timing (when agents *are* deployed)
