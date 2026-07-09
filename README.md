@@ -5,13 +5,6 @@
 **A practical, vendor-neutral learning path for understanding and explaining Cisco Secure Workload (CSW).**
 
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
->
-> **Video attributions:** All videos linked in this repository are the property of their respective creators and channels. Full credit to:
-> - **Jason Maynard** — ["How Hard Can It Be?" CSW series](https://www.youtube.com/@jasonmaynard8773) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (Modules 1–8, and deep-dive content in Modules 3, 5, 6, 7, 11, 13, 16)
-> - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15)
-> - **BarrySecure** — [BarrySecure YouTube channel](https://www.youtube.com/@BarrySecure) (CSW 101 overview demo)
->
-> This repo curates and organizes their publicly available content into a structured learning path. No content has been reproduced or modified — all links go directly to the original videos.
 
 Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **84-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
 
@@ -166,7 +159,9 @@ Pick the lane that matches your time and role.
 
 > **Legend:** 🎬 video · 📘 guide · 📄 doc
 
-**84 curated videos across 16 modules**, ordered so CSW skills build fastest: concepts → agents → visibility → policy → security outcomes → environment-specific depth. To keep this README scannable, the **full catalog now lives on its own page**.
+**84 curated videos across 16 modules**, ordered so CSW skills build fastest: concepts → agents → visibility → policy → security outcomes → environment-specific depth. The map below charts the journey as themed "islands"; the full catalog lives on its own page.
+
+![CSW learning-journey map — themed islands from Foundations through Incident Response](docs/user-education/csw-learning-journey.png)
 
 ### ▶ [Open the full Video Library →](docs/user-education/VIDEO-LIBRARY.md)
 
@@ -176,26 +171,31 @@ Pick the lane that matches your time and role.
 |---|---|
 | [🎬 Cisco Secure Workload — Overview & Live Demo](https://www.youtube.com/watch?v=8v6BQYrO5v8&t=2s) | End-to-end product walkthrough — best first watch before any module. |
 
-**Module index** — jump straight into the catalog:
+### 🗺️ The CSW Learning Journey
 
-| Module | Topic |
-|---|---|
-| [Module 1](docs/user-education/VIDEO-LIBRARY.md#module-1--foundations-start-here) | Foundations (start here) |
-| [Module 2](docs/user-education/VIDEO-LIBRARY.md#module-2--agent-deployment) | Agent deployment |
-| [Module 3](docs/user-education/VIDEO-LIBRARY.md#module-3--visibility-and-dependency-discovery) | Visibility and dependency discovery |
-| [Module 4](docs/user-education/VIDEO-LIBRARY.md#module-4--ai-assisted-policy-after-module-3) | AI-assisted policy (after Module 3) |
-| [Module 5](docs/user-education/VIDEO-LIBRARY.md#module-5--security-risk-and-forensics) | Security, risk, and forensics |
-| [Module 6](docs/user-education/VIDEO-LIBRARY.md#module-6--segmentation-use-cases) | Segmentation use cases |
-| [Module 7](docs/user-education/VIDEO-LIBRARY.md#module-7--integrations-pick-what-matches-the-stack) | Integrations (pick what matches the stack) |
-| [Module 8](docs/user-education/VIDEO-LIBRARY.md#module-8--containers-and-kubernetes) | Containers and Kubernetes |
-| [Module 9](docs/user-education/VIDEO-LIBRARY.md#module-9--official-channel-getting-started) | Official Channel: Getting Started |
-| [Module 10](docs/user-education/VIDEO-LIBRARY.md#module-10--connectors-telemetry--application-discovery) | Connectors, Telemetry & Application Discovery |
-| [Module 11](docs/user-education/VIDEO-LIBRARY.md#module-11--policy-lifecycle--enforcement-deep-dive) | Policy Lifecycle & Enforcement (deep dive) |
-| [Module 12](docs/user-education/VIDEO-LIBRARY.md#module-12--security-forensics--alerting) | Security, Forensics & Alerting |
-| [Module 13](docs/user-education/VIDEO-LIBRARY.md#module-13--day-2-operations--platform-management) | Day-2 Operations & Platform Management |
-| [Module 14](docs/user-education/VIDEO-LIBRARY.md#module-14--integrations-newer) | Integrations (newer) |
-| [Module 15](docs/user-education/VIDEO-LIBRARY.md#module-15--strategy--architecture) | Strategy & Architecture |
-| [Module 16](docs/user-education/VIDEO-LIBRARY.md#module-16--incident-response-ir-deep-dive) | Incident Response (IR Deep Dive) |
+*Hop across the islands in order, or dive straight into any stop. 🎬 = video module — each link opens the matching section of the full catalog.*
+
+1. **🏝️ Foundations** — 🎬 [Foundations](docs/user-education/VIDEO-LIBRARY.md#module-1--foundations-start-here)
+2. **🚀 Agents** — 🎬 [Agent deployment](docs/user-education/VIDEO-LIBRARY.md#module-2--agent-deployment)
+3. **🔎 Visibility** — 🎬 [Visibility & dependency discovery](docs/user-education/VIDEO-LIBRARY.md#module-3--visibility-and-dependency-discovery) · 🎬 [Connectors, Telemetry & Application Discovery](docs/user-education/VIDEO-LIBRARY.md#module-10--connectors-telemetry--application-discovery)
+4. **🧭 Policy** — 🎬 [AI-assisted policy](docs/user-education/VIDEO-LIBRARY.md#module-4--ai-assisted-policy-after-module-3) · 🎬 [Policy Lifecycle & Enforcement](docs/user-education/VIDEO-LIBRARY.md#module-11--policy-lifecycle--enforcement-deep-dive)
+5. **🛡️ Security** — 🎬 [Security, risk & forensics](docs/user-education/VIDEO-LIBRARY.md#module-5--security-risk-and-forensics) · 🎬 [Security, Forensics & Alerting](docs/user-education/VIDEO-LIBRARY.md#module-12--security-forensics--alerting)
+6. **🧩 Use cases** — 🎬 [Segmentation use cases](docs/user-education/VIDEO-LIBRARY.md#module-6--segmentation-use-cases)
+7. **🔌 Integrations** — 🎬 [Integrations — pick what matches the stack](docs/user-education/VIDEO-LIBRARY.md#module-7--integrations-pick-what-matches-the-stack) · 🎬 [Integrations (newer)](docs/user-education/VIDEO-LIBRARY.md#module-14--integrations-newer)
+8. **📦 Containers** — 🎬 [Containers & Kubernetes](docs/user-education/VIDEO-LIBRARY.md#module-8--containers-and-kubernetes)
+9. **🎥 Official demos** — 🎬 [Official Channel: Getting Started](docs/user-education/VIDEO-LIBRARY.md#module-9--official-channel-getting-started)
+10. **🔧 Day-2 Ops** — 🎬 [Day-2 Operations & Platform Management](docs/user-education/VIDEO-LIBRARY.md#module-13--day-2-operations--platform-management)
+11. **🗺️ Strategy** — 🎬 [Strategy & Architecture](docs/user-education/VIDEO-LIBRARY.md#module-15--strategy--architecture)
+12. **🚨 Incident Response** — 🎬 [Incident Response (IR Deep Dive)](docs/user-education/VIDEO-LIBRARY.md#module-16--incident-response-ir-deep-dive)
+
+### 📺 Video Attributions
+
+> **Video attributions:** All videos linked in this repository are the property of their respective creators and channels. Full credit to:
+> - **Jason Maynard** — ["How Hard Can It Be?" CSW series](https://www.youtube.com/@jasonmaynard8773) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (Modules 1–8, and deep-dive content in Modules 3, 5, 6, 7, 11, 13, 16)
+> - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15)
+> - **BarrySecure** — [BarrySecure YouTube channel](https://www.youtube.com/@BarrySecure) (CSW 101 overview demo)
+>
+> This repo curates and organizes their publicly available content into a structured learning path. No content has been reproduced or modified — all links go directly to the original videos.
 
 ## Repository Layout
 
