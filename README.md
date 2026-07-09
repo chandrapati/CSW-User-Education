@@ -161,7 +161,7 @@ Pick the lane that matches your time and role.
 
 **84 curated videos across 16 modules**, ordered so CSW skills build fastest: concepts → agents → visibility → policy → security outcomes → environment-specific depth. The map below charts the journey as themed "islands"; the full catalog lives on its own page.
 
-![CSW learning-journey map — themed islands from Foundations through Incident Response](docs/user-education/csw-learning-journey.png)
+![CSW learning-journey map — themed islands from Overview Demo through Incident Response](docs/user-education/csw-learning-journey.png)
 
 ### ▶ [Open the full Video Library →](docs/user-education/VIDEO-LIBRARY.md)
 
@@ -175,18 +175,19 @@ Pick the lane that matches your time and role.
 
 *Hop across the islands in order, or dive straight into any stop. 🎬 = video module — each link opens the matching section of the full catalog.*
 
-1. **🏝️ Foundations** — 🎬 [Foundations](docs/user-education/VIDEO-LIBRARY.md#module-1--foundations-start-here)
-2. **🚀 Agents** — 🎬 [Agent deployment](docs/user-education/VIDEO-LIBRARY.md#module-2--agent-deployment)
-3. **🔎 Visibility** — 🎬 [Visibility & dependency discovery](docs/user-education/VIDEO-LIBRARY.md#module-3--visibility-and-dependency-discovery) · 🎬 [Connectors, Telemetry & Application Discovery](docs/user-education/VIDEO-LIBRARY.md#module-10--connectors-telemetry--application-discovery)
-4. **🧭 Policy** — 🎬 [AI-assisted policy](docs/user-education/VIDEO-LIBRARY.md#module-4--ai-assisted-policy-after-module-3) · 🎬 [Policy Lifecycle & Enforcement](docs/user-education/VIDEO-LIBRARY.md#module-11--policy-lifecycle--enforcement-deep-dive)
-5. **🛡️ Security** — 🎬 [Security, risk & forensics](docs/user-education/VIDEO-LIBRARY.md#module-5--security-risk-and-forensics) · 🎬 [Security, Forensics & Alerting](docs/user-education/VIDEO-LIBRARY.md#module-12--security-forensics--alerting)
-6. **🧩 Use cases** — 🎬 [Segmentation use cases](docs/user-education/VIDEO-LIBRARY.md#module-6--segmentation-use-cases)
-7. **🔌 Integrations** — 🎬 [Integrations — pick what matches the stack](docs/user-education/VIDEO-LIBRARY.md#module-7--integrations-pick-what-matches-the-stack) · 🎬 [Integrations (newer)](docs/user-education/VIDEO-LIBRARY.md#module-14--integrations-newer)
-8. **📦 Containers** — 🎬 [Containers & Kubernetes](docs/user-education/VIDEO-LIBRARY.md#module-8--containers-and-kubernetes)
-9. **🎥 Official demos** — 🎬 [Official Channel: Getting Started](docs/user-education/VIDEO-LIBRARY.md#module-9--official-channel-getting-started)
-10. **🔧 Day-2 Ops** — 🎬 [Day-2 Operations & Platform Management](docs/user-education/VIDEO-LIBRARY.md#module-13--day-2-operations--platform-management)
-11. **🗺️ Strategy** — 🎬 [Strategy & Architecture](docs/user-education/VIDEO-LIBRARY.md#module-15--strategy--architecture)
-12. **🚨 Incident Response** — 🎬 [Incident Response (IR Deep Dive)](docs/user-education/VIDEO-LIBRARY.md#module-16--incident-response-ir-deep-dive)
+1. **▶️ Overview Demo** — 🎬 [CSW 101 — Overview & Live Demo](docs/user-education/VIDEO-LIBRARY.md#start-here--csw-101-introduction)
+2. **🏝️ Foundations** — 🎬 [Foundations](docs/user-education/VIDEO-LIBRARY.md#module-1--foundations-start-here)
+3. **🚀 Agents** — 🎬 [Agent deployment](docs/user-education/VIDEO-LIBRARY.md#module-2--agent-deployment)
+4. **🔎 Visibility** — 🎬 [Visibility & dependency discovery](docs/user-education/VIDEO-LIBRARY.md#module-3--visibility-and-dependency-discovery) · 🎬 [Connectors, Telemetry & Application Discovery](docs/user-education/VIDEO-LIBRARY.md#module-10--connectors-telemetry--application-discovery)
+5. **🧭 Policy** — 🎬 [AI-assisted policy](docs/user-education/VIDEO-LIBRARY.md#module-4--ai-assisted-policy-after-module-3) · 🎬 [Policy Lifecycle & Enforcement](docs/user-education/VIDEO-LIBRARY.md#module-11--policy-lifecycle--enforcement-deep-dive)
+6. **🛡️ Security** — 🎬 [Security, risk & forensics](docs/user-education/VIDEO-LIBRARY.md#module-5--security-risk-and-forensics) · 🎬 [Security, Forensics & Alerting](docs/user-education/VIDEO-LIBRARY.md#module-12--security-forensics--alerting)
+7. **🧩 Use cases** — 🎬 [Segmentation use cases](docs/user-education/VIDEO-LIBRARY.md#module-6--segmentation-use-cases)
+8. **🔌 Integrations** — 🎬 [Integrations — pick what matches the stack](docs/user-education/VIDEO-LIBRARY.md#module-7--integrations-pick-what-matches-the-stack) · 🎬 [Integrations (newer)](docs/user-education/VIDEO-LIBRARY.md#module-14--integrations-newer)
+9. **📦 Containers** — 🎬 [Containers & Kubernetes](docs/user-education/VIDEO-LIBRARY.md#module-8--containers-and-kubernetes)
+10. **🎥 Official demos** — 🎬 [Official Channel: Getting Started](docs/user-education/VIDEO-LIBRARY.md#module-9--official-channel-getting-started)
+11. **🔧 Day-2 Ops** — 🎬 [Day-2 Operations & Platform Management](docs/user-education/VIDEO-LIBRARY.md#module-13--day-2-operations--platform-management)
+12. **🗺️ Strategy** — 🎬 [Strategy & Architecture](docs/user-education/VIDEO-LIBRARY.md#module-15--strategy--architecture)
+13. **🚨 Incident Response** — 🎬 [Incident Response (IR Deep Dive)](docs/user-education/VIDEO-LIBRARY.md#module-16--incident-response-ir-deep-dive)
 
 ### 📺 Video Attributions
 
