@@ -2,6 +2,8 @@
 
 [← Back to the User Education README](../../README.md)
 
+![CSW learning-journey map](csw-learning-journey.png)
+
 > **Legend:** 🎬 video · 📘 guide · 📄 doc
 
 84 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**; **Module 16 covers Incident Response scenarios**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
