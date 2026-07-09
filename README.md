@@ -28,7 +28,7 @@ Cisco Secure Workload is a workload visibility and micro-segmentation platform. 
 - [Video Library (Learning Path Order)](#video-library-learning-path-order)
 - [Repository Layout](#repository-layout)
 - [Regenerating the Documents](#regenerating-the-documents)
-- [Related Cisco Secure Workload Resources](#related-cisco-secure-workload-resources)
+- [CSW Integration Guides & Resources](#csw-integration-guides--resources)
 
 ## Who This Repo Is For
 
@@ -432,7 +432,7 @@ Keep the two steps separate (do not chain with `&&`): if `soffice` ever hangs on
 
 ---
 
-## Related Cisco Secure Workload Resources
+## CSW Integration Guides & Resources
 
 | Repository | Description | Best for |
 |------------|-------------|---------|
