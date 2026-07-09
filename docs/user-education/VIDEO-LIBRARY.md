@@ -10,7 +10,7 @@
 
 ---
 
-### 🎬 Start Here — CSW 101 Introduction
+### Start Here — CSW 101 Introduction
 
 > **New to Cisco Secure Workload? Watch this first.**
 > A complete product overview and end-to-end live demo — covers what CSW is, how it discovers application dependencies, and how it enforces least-privilege policy.
