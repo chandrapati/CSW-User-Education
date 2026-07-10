@@ -148,6 +148,7 @@ Pick the lane that matches your time and role.
 
 | If you have... | Start with |
 |---|---|
+| **No time to read?** | 🎬 **[Watch: Cisco Secure Workload — a short explainer](https://youtu.be/6a1dQDLmoI8)** — the whole CSW story (why it exists, how it works, what it delivers) in one quick watch. |
 | **10 minutes** | [🎬 Scopes](https://www.youtube.com/watch?v=3KBmanCNm4U) and [🎬 Labels](https://www.youtube.com/watch?v=NLoZq0wiTU8) — the two foundational concepts every CSW conversation builds on. |
 | **30 minutes** | Add [🎬 Application Dependency Mapping & Policy Analysis](https://www.youtube.com/watch?v=Jzzblea25UA) — the primary value of CSW: discover what talks to what, then derive policy. |
 | **2 hours** | Modules 1–4 in the [Video Library](#video-library-learning-path-order) (foundations through core policy workflow). |
@@ -169,6 +170,7 @@ Pick the lane that matches your time and role.
 
 | Video | Description |
 |---|---|
+| [🎬 Cisco Secure Workload — short explainer (watch this if short on time)](https://youtu.be/6a1dQDLmoI8) | The entire CSW story in one quick video — ideal when there's no time to read the guide. |
 | [🎬 Cisco Secure Workload — Overview & Live Demo](https://www.youtube.com/watch?v=8v6BQYrO5v8&t=2s) | End-to-end product walkthrough — best first watch before any module. |
 
 ### 🗺️ The CSW Learning Journey
