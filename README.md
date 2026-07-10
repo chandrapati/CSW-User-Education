@@ -267,6 +267,7 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | [📘 Azure Connector](https://github.com/chandrapati/csw-azure-connector) | Azure VM tag ingestion + VNet flow logs + NSG enforcement | Azure workloads |
 | [📘 GCP Connector](https://github.com/chandrapati/csw-gcp-connector) | GCE label ingestion + VPC flow logs + firewall enforcement | GCP workloads |
 | [📘 NetFlow](https://github.com/chandrapati/csw-netflow-integration) | NetFlow v9/IPFIX agentless flow ingestion from switches | Network fabric visibility |
+| [📘 Meraki](https://github.com/chandrapati/csw-meraki-integration) | Agentless NetFlow v9 flow ingestion from Meraki MX via the Ingest connector | Meraki-fronted workload visibility |
 | [📘 ERSPAN](https://github.com/chandrapati/csw-erspan-integration) | Agentless packet mirroring for legacy / OT / IoT devices | Deep agentless visibility |
 | [📘 Secure Firewall](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) | NSEL flow ingestion from Cisco Secure Firewall (FTD/ASA) | Firewall flow visibility |
 | [📘 Splunk & Notifiers](https://github.com/chandrapati/csw-splunk-integration) | CSW alerts → Splunk SIEM + all alert notifiers (Email/Slack/PagerDuty/Kinesis/Webex/Discord) | SecOps / SIEM teams |
