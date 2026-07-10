@@ -249,6 +249,7 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | Guide | Description | Best for |
 |-------|-------------|---------|
 | [📘 Agent Installation](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Deploy CSW agents on Linux / Windows / cloud | Day-1 sensor deployment |
+| [📘 Kubernetes / OpenShift](https://github.com/chandrapati/csw-kubernetes-integration) | K8s connector + node-agent DaemonSet: pod/service labels, east-west flow visibility, iptables micro-segmentation, CVE scanning | Container segmentation |
 | [📘 Policy Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Policy discovery → enforcement workflow | Policy management |
 | [📘 ISE / pxGrid](https://github.com/chandrapati/csw-ise-integration) | ISE/pxGrid: user-identity–aware microsegmentation | Identity & Zero Trust |
 | [📘 AnyConnect NVM](https://github.com/chandrapati/csw-anyconnect-nvm) | Endpoint process flows + user identity via NVM | Endpoint telemetry |
@@ -279,4 +280,4 @@ Learning paths, reference material, and day-2 tooling:
 | [📄 Supported OS & Compatibility Matrix](https://www.cisco.com/c/m/en_us/products/security/secure-workload-compatibility-matrix.html) | Cisco's authoritative list of supported agent operating systems, external systems, and connector requirements | Platform planning & prerequisites |
 
 > **Suggested customer journey:**
-> User Education → Agent Installation → Policy Lifecycle → ISE/pxGrid → ServiceNow CMDB → Infoblox → F5 BIG-IP → NetScaler ADC → Splunk Integration → Compliance Mapping → Operations Toolkit
+> User Education → Agent Installation → Kubernetes / OpenShift → Policy Lifecycle → ISE/pxGrid → ServiceNow CMDB → Infoblox → F5 BIG-IP → NetScaler ADC → Splunk Integration → Compliance Mapping → Operations Toolkit
