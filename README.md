@@ -249,7 +249,8 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | Guide | Description | Best for |
 |-------|-------------|---------|
 | [📘 Agent Installation](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Deploy CSW agents on Linux / Windows / cloud | Day-1 sensor deployment |
-| [📘 Kubernetes / OpenShift](https://github.com/chandrapati/csw-kubernetes-integration) | K8s connector + node-agent DaemonSet: pod/service labels, east-west flow visibility, iptables micro-segmentation, CVE scanning | Container segmentation |
+| [📘 Kubernetes](https://github.com/chandrapati/csw-kubernetes-integration) | K8s connector + node-agent DaemonSet: pod/service labels, east-west flow visibility, iptables micro-segmentation, CVE scanning | Container segmentation (EKS/AKS/GKE/upstream) |
+| [📘 Red Hat OpenShift](https://github.com/chandrapati/csw-openshift-integration) | OpenShift connector + DaemonSet (privileged SCC): project/pod/service labels, flows, iptables micro-segmentation, CVE scanning | Red Hat OpenShift segmentation |
 | [📘 Policy Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Policy discovery → enforcement workflow | Policy management |
 | [📘 ISE / pxGrid](https://github.com/chandrapati/csw-ise-integration) | ISE/pxGrid: user-identity–aware microsegmentation | Identity & Zero Trust |
 | [📘 AnyConnect NVM](https://github.com/chandrapati/csw-anyconnect-nvm) | Endpoint process flows + user identity via NVM | Endpoint telemetry |
