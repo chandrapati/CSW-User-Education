@@ -2,7 +2,7 @@
 """Generate two animated GIFs for the CSW-User-Education README:
   1) csw-containment.gif  -- ransomware blast radius WITHOUT vs WITH CSW
   2) csw-architecture.gif -- how CSW works (visibility -> context -> ADM -> analysis -> enforce)
-All original artwork; vendor-neutral; no Cisco copyrighted assets.
+All original artwork; no Cisco copyrighted assets.
 """
 from PIL import Image, ImageDraw, ImageFont
 import os

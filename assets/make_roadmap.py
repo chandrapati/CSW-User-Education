@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate a polished phased-adoption roadmap banner for the CSW-User-Education
 README. Dark theme, gantt-style colored phase pills, milestone gridlines, icons,
-and short value tags. All original artwork; vendor-neutral.
+and short value tags. All original artwork.
 """
 from PIL import Image, ImageDraw, ImageFont
 import os

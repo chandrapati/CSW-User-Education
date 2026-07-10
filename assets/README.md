@@ -1,6 +1,6 @@
 # Diagram assets
 
-Original, vendor-neutral animated diagrams for the repo README. No Cisco
+Original animated diagrams for the repo README. No Cisco
 copyrighted artwork is used.
 
 | File | Shows |
