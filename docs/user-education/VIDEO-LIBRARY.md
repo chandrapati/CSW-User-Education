@@ -103,6 +103,8 @@ Watch only the rows relevant to the customer POV.
 | [🎬 Secure Workload & Firewall Integration (Part 2)](https://www.youtube.com/watch?v=xpbg3s0vrcI) | Deployment patterns and policy flow. |
 | [🎬 Secure Workload & Firewall Integration (Part 3)](https://www.youtube.com/watch?v=X65mwN7kJGg&t=53s) | Enforcement, telemetry, and operations. |
 | [📄 Secure Workload and Secure Firewall White Paper](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html) | Joint architecture reference (Cisco.com). |
+| [📄 Secure Workload & Secure Firewall — Overview](https://secure.cisco.com/secure-workload/docs/secure-workload-and-secure-firewall) | Why combined host + network enforcement matters; integration overview (secure.cisco.com). |
+| [📄 Importance of Topology Awareness](https://secure.cisco.com/secure-workload/docs/secure-workload-compliance) | How Scope-to-firewall mapping pushes only the required rules to each firewall for compliance (secure.cisco.com). |
 | [📄 Secure Workload & Firewall Integration Deep Dive](https://secure.cisco.com/secure-workload/docs/secure-workload-whitepaper) | Design principles and use cases. |
 | [🎬 F5 BIG-IP and Cisco Tetration: APM Visibility](https://www.youtube.com/watch?v=dqbWhvFNsso&t=90s) | F5 APM data for application visibility. |
 | [🎬 Cisco Tetration and F5 BIG-IP AFM](https://www.youtube.com/watch?v=HcF3yQHmeXc) | F5 AFM flow context integration. |

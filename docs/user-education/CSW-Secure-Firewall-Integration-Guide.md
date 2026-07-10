@@ -278,6 +278,9 @@ If API **`flowsearch`** times out when pulling large NetFlow-derived datasets, u
 |----------|-----|
 | CSW 4.0 SaaS — Connectors | [Configure and Manage Connectors](https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/4_0/cisco-secure-workload-user-guide-saas-v40/m-connectors.html) |
 | CSW + Secure Firewall white paper | [sec-workload-firewall-wp.html](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html) |
+| CSW + Secure Firewall — Overview | [secure-workload-and-secure-firewall](https://secure.cisco.com/secure-workload/docs/secure-workload-and-secure-firewall) |
+| Importance of Topology Awareness | [secure-workload-compliance](https://secure.cisco.com/secure-workload/docs/secure-workload-compliance) |
+| CSW + Firewall integration deep dive | [secure-workload-whitepaper](https://secure.cisco.com/secure-workload/docs/secure-workload-whitepaper) |
 | CSW + FMC integration guide | [b-csw-fmc-integration-guide.html](https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/integration/guide/b-csw-fmc-integration-guide.html) |
 | ASA NSEL configuration | [ASA NetFlow Implementation Guide](https://www.cisco.com/c/en/us/td/docs/security/asa/asa-netflow/asa-netflow.html) |
 

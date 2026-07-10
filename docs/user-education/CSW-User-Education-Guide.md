@@ -264,6 +264,8 @@ Videos are listed in the order that builds CSW skills fastest — not grouped by
 | 21 | 19 | Secure Workload & Firewall Integration (Part 2) | Deployment patterns and policy flow. | [Watch](https://www.youtube.com/watch?v=xpbg3s0vrcI) |
 | 22 | 20 | Secure Workload & Firewall Integration (Part 3) | Enforcement, telemetry, operations. | [Watch](https://www.youtube.com/watch?v=X65mwN7kJGg&t=53s) |
 | 23 | 21 | Secure Firewall White Paper | Joint architecture (Cisco.com). | [Read](https://www.cisco.com/c/en/us/products/collateral/security/secure-workload/sec-workload-firewall-wp.html) |
+| — | — | Secure Workload & Secure Firewall — Overview | Why combined host + network enforcement (secure.cisco.com). | [Read](https://secure.cisco.com/secure-workload/docs/secure-workload-and-secure-firewall) |
+| — | — | Importance of Topology Awareness | Scope-to-firewall mapping pushes only required rules (secure.cisco.com). | [Read](https://secure.cisco.com/secure-workload/docs/secure-workload-compliance) |
 | 24 | 22 | Firewall Integration Deep Dive | Design principles and use cases. | [Read](https://secure.cisco.com/secure-workload/docs/secure-workload-whitepaper) |
 | 25 | 23 | F5 BIG-IP: APM Visibility | F5 APM application visibility. | [Watch](https://www.youtube.com/watch?v=dqbWhvFNsso&t=90s) |
 | 26 | 24 | F5 BIG-IP AFM | AFM flow context. | [Watch](https://www.youtube.com/watch?v=HcF3yQHmeXc) |
