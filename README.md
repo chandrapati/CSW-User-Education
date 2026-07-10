@@ -253,6 +253,7 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | [📘 Agent Installation](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Deploy CSW agents on Linux / Windows / cloud | Day-1 sensor deployment |
 | [📘 Kubernetes](https://github.com/chandrapati/csw-kubernetes-integration) | K8s connector + node-agent DaemonSet: pod/service labels, east-west flow visibility, iptables micro-segmentation, CVE scanning | Container segmentation (EKS/AKS/GKE/upstream) |
 | [📘 Red Hat OpenShift](https://github.com/chandrapati/csw-openshift-integration) | OpenShift connector + DaemonSet (privileged SCC): project/pod/service labels, flows, iptables micro-segmentation, CVE scanning | Red Hat OpenShift segmentation |
+| [📘 K8s Demo Apps on vSphere](https://github.com/chandrapati/csw-lab-k8s-demo-apps-vsphere) | Terraform-provisioned kubeadm cluster on vCenter running Sock Shop + Online Boutique across two namespaces | Lab / POV east-west targets |
 | [📘 Policy Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Policy discovery → enforcement workflow | Policy management |
 | [📘 ISE / pxGrid](https://github.com/chandrapati/csw-ise-integration) | ISE/pxGrid: user-identity–aware microsegmentation | Identity & Zero Trust |
 | [📘 vCenter](https://github.com/chandrapati/csw-vcenter-integration) | VMware vCenter VM identity + tag/category label import | Virtualization-driven policy |
