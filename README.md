@@ -254,9 +254,11 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | [📘 Policy Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | Policy discovery → enforcement workflow | Policy management |
 | [📘 ISE / pxGrid](https://github.com/chandrapati/csw-ise-integration) | ISE/pxGrid: user-identity–aware microsegmentation | Identity & Zero Trust |
 | [📘 vCenter](https://github.com/chandrapati/csw-vcenter-integration) | VMware vCenter VM identity + tag/category label import | Virtualization-driven policy |
+| [📘 Cisco ACI](https://github.com/chandrapati/csw-aci-integration) | ACI endpoint/label ingestion, VRF→scope mapping, ESG contract enforcement (leaf TCAM) | ACI fabric segmentation |
 | [📘 AnyConnect NVM](https://github.com/chandrapati/csw-anyconnect-nvm) | Endpoint process flows + user identity via NVM | Endpoint telemetry |
 | [📘 ServiceNow CMDB](https://github.com/chandrapati/csw-servicenow-integration) | ServiceNow CMDB label enrichment for workload scopes | CMDB-driven policy |
 | [📘 Infoblox](https://github.com/chandrapati/csw-infoblox-integration) | Infoblox IPAM/DNS extensible-attribute label enrichment | IPAM/DNS-driven policy |
+| [📘 DNS](https://github.com/chandrapati/csw-dns-integration) | AXFR zone-transfer hostname labels (`orchestrator_system/dns_name`) for scopes/policy | Hostname-driven policy |
 | [📘 F5 BIG-IP](https://github.com/chandrapati/csw-f5-integration) | F5 virtual-server labels, policy enforcement, IPFIX flow visibility | Load balancer segmentation |
 | [📘 NetScaler ADC](https://github.com/chandrapati/csw-netscaler-integration) | NetScaler LB virtual-server labels, ACL enforcement + AppFlow/IPFIX flow visibility | Load balancer segmentation |
 | [📘 AWS Connector](https://github.com/chandrapati/csw-aws-connector) | EC2 tag ingestion + VPC flow logs + Security Group enforcement | AWS workloads |
@@ -265,7 +267,7 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | [📘 NetFlow](https://github.com/chandrapati/csw-netflow-integration) | NetFlow v9/IPFIX agentless flow ingestion from switches | Network fabric visibility |
 | [📘 ERSPAN](https://github.com/chandrapati/csw-erspan-integration) | Agentless packet mirroring for legacy / OT / IoT devices | Deep agentless visibility |
 | [📘 Secure Firewall](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) | NSEL flow ingestion from Cisco Secure Firewall (FTD/ASA) | Firewall flow visibility |
-| [📘 Splunk Integration](https://github.com/chandrapati/csw-splunk-integration) | CSW syslog alerts → Splunk SIEM | SecOps / SIEM teams |
+| [📘 Splunk & Notifiers](https://github.com/chandrapati/csw-splunk-integration) | CSW alerts → Splunk SIEM + all alert notifiers (Email/Slack/PagerDuty/Kinesis/Webex/Discord) | SecOps / SIEM teams |
 
 ## Resources
 
