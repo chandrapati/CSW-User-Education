@@ -204,24 +204,45 @@ def palm(c, x, y, flip=False):
     c.ellipse([tx - 4, ty - 4, tx + 4, ty + 4], fill=(120, 90, 55))
 
 
-def island(c, cx, cy, num, kind, label, has_palm=True):
-    rx, ry = 82, 50
-    # water shadow
-    c.ellipse([cx - rx + 4, cy + 20, cx + rx + 8, cy + 42], fill=SAND_SH)
-    # sand body
-    c.ellipse([cx - rx, cy - ry + 10, cx + rx, cy + ry + 10], fill=SAND, outline=SAND_EDGE, width=2)
-    # sand top highlight
-    c.ellipse([cx - rx + 10, cy - ry + 14, cx + rx - 10, cy + 2], fill=SAND_HI)
+def blob(cx, cy, rx, ry, seed, n=54):
+    """Organic island outline: an ellipse with gentle multi-harmonic wobble."""
+    pts = []
+    for i in range(n):
+        a = 2 * math.pi * i / n
+        k = (0.085 * math.sin(3 * a + seed)
+             + 0.05 * math.sin(5 * a + seed * 1.7)
+             + 0.03 * math.sin(8 * a + seed * 0.6))
+        pts.append((cx + math.cos(a) * rx * (1 + k),
+                    cy + math.sin(a) * ry * (1 + k)))
+    return pts
+
+
+def grass_tuft(c, x, y):
+    for dx in (-6, -2, 2, 6):
+        c.line([(x + dx, y), (x + dx * 1.4, y - 9)], fill=LEAF_DK, width=2)
+        c.line([(x + dx, y), (x + dx * 0.8, y - 11)], fill=LEAF, width=2)
+
+
+def island(c, cx, cy, kind, label, seed, has_palm=True):
+    rx, ry = 88, 47
+    # soft water shadow beneath the island
+    c.ellipse([cx - rx + 6, cy + ry - 6, cx + rx + 10, cy + ry + 20], fill=SAND_SH)
+    # surrounding water ripples
+    c.arc([cx - rx - 14, cy - ry, cx + rx + 14, cy + ry + 22], 20, 160, fill=WAVE, width=2)
+    c.arc([cx - rx - 24, cy - ry - 4, cx + rx + 24, cy + ry + 30], 25, 155, fill=blend(WAVE, SKY_BOT, 0.4), width=2)
+    # wet-sand shoreline (darker, full size)
+    c.polygon(blob(cx, cy + 4, rx, ry, seed), fill=SAND_EDGE)
+    # dry sand body
+    c.polygon(blob(cx, cy, rx - 7, ry - 6, seed), fill=SAND)
+    # sunlit sand highlight (upper portion)
+    c.polygon(blob(cx, cy - 9, rx - 26, ry - 16, seed + 1.3), fill=SAND_HI)
     if has_palm:
-        palm(c, cx + 46, cy + 6, flip=False)
-    icon(c, kind, cx - 6, cy - 2)
-    # number badge (floats above island)
-    bx, by = cx, cy - ry - 20
-    c.ellipse([bx - 20, by - 20, bx + 20, by + 20], fill=WHITE)
-    c.ellipse([bx - 17, by - 17, bx + 17, by + 17], fill=BLUE)
-    c.text((bx, by - 1), str(num), bold(19), WHITE)
+        grass_tuft(c, cx + 60, cy + 4)
+        palm(c, cx + 44, cy + 4, flip=False)
+    grass_tuft(c, cx - 52, cy + 8)
+    icon(c, kind, cx - 8, cy - 4)
     # label
-    c.text((cx, cy + ry + 30), label, bold(15.5), LABEL)
+    c.text((cx, cy + ry + 26), label, bold(15.5), LABEL)
 
 
 def dotted_path(c, pts, color=BLUE, r=4.2, gap=15):
@@ -335,10 +356,10 @@ def build(path):
 
     # ---- dotted trail (behind islands) ----
     def edge_r(n):   # right edge point of island n
-        x, y = pos[n]; return (x + 84, y - 2)
+        x, y = pos[n]; return (x + 90, y + 2)
 
     def edge_l(n):
-        x, y = pos[n]; return (x - 84, y - 2)
+        x, y = pos[n]; return (x - 90, y + 2)
 
     trail = [(start_xy[0] + 34, start_xy[1] - 4)]
     trail.append(edge_l(1))
@@ -347,13 +368,13 @@ def build(path):
         trail.append(edge_r(n)); trail.append(edge_l(n + 1))
     # curve 5 -> 6 down the right side
     x5, y5 = pos[5]; x6, y6 = pos[6]
-    trail += [(x5 + 84, y5), (x5 + 150, y5 + 60), (x6 + 84, y6 - 60), edge_r(6)]
+    trail += [(x5 + 90, y5), (x5 + 150, y5 + 60), (x6 + 90, y6 - 60), edge_r(6)]
     # row 2 across (right->left)
     for n in range(6, 10):
         trail.append(edge_l(n)); trail.append(edge_r(n + 1))
     # curve 10 -> 11 down the left side
     x10, y10 = pos[10]; x11, y11 = pos[11]
-    trail += [(x10 - 84, y10), (x10 - 150, y10 + 60), (x11 - 84, y11 - 60), edge_l(11)]
+    trail += [(x10 - 90, y10), (x10 - 150, y10 + 60), (x11 - 90, y11 - 60), edge_l(11)]
     # row 3 across
     for n in range(11, 15):
         trail.append(edge_r(n)); trail.append(edge_l(n + 1))
@@ -365,7 +386,7 @@ def build(path):
     start_marker(c, *start_xy)
     for num, kind, label in ISLANDS:
         x, y = pos[num]
-        island(c, x, y, num, kind, label)
+        island(c, x, y, kind, label, seed=num * 1.37)
     mastery_marker(c, *mastery_xy)
 
     # ---- header banner ----
