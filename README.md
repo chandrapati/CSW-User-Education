@@ -250,6 +250,7 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 
 | Guide | Description | Best for |
 |-------|-------------|---------|
+| [📘 CSW-V on vSphere (deploy the platform)](https://github.com/chandrapati/csw-virtual-vsphere-deployment) | Screenshot-driven CSW Virtual / Tetration-V install on VMware ESXi: OVA deploy, site config, automated cluster build, hardening, licensing (legacy + CSW 4.0 InfraMGR) | Standing up CSW on-prem |
 | [📘 Agent Installation](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | Deploy CSW agents on Linux / Windows / cloud | Day-1 sensor deployment |
 | [📘 Kubernetes](https://github.com/chandrapati/csw-kubernetes-integration) | K8s connector + node-agent DaemonSet: pod/service labels, east-west flow visibility, iptables micro-segmentation, CVE scanning | Container segmentation (EKS/AKS/GKE/upstream) |
 | [📘 Red Hat OpenShift](https://github.com/chandrapati/csw-openshift-integration) | OpenShift connector + DaemonSet (privileged SCC): project/pod/service labels, flows, iptables micro-segmentation, CVE scanning | Red Hat OpenShift segmentation |
