@@ -162,7 +162,7 @@ Pick the lane that matches your time and role.
 
 **84 curated videos across 16 modules**, ordered so CSW skills build fastest: concepts → agents → visibility → policy → security outcomes → environment-specific depth. The map below charts the journey as themed "islands"; the full catalog lives on its own page.
 
-![CSW learning-journey map — 15 themed islands from Overview Demo through Incident Response](docs/user-education/csw-learning-journey.png)
+![CSW video learning library — an island-map journey across the CSW learning path: Start Here → Getting Started → Agent Install → Scopes & Labels → ADM Discovery → Policy Lifecycle → Enforcement → Integrations → Deep Dive Labs](docs/user-education/csw-learning-journey.png)
 
 ### ▶ [Open the full Video Library →](docs/user-education/VIDEO-LIBRARY.md)
 
