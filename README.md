@@ -4,8 +4,6 @@
 
 **A practical learning path for understanding and explaining Cisco Secure Workload (CSW).**
 
-![Cisco Secure Workload video learning library — an island-map journey: Start Here → Getting Started → Agent Install → Scopes & Labels → ADM Discovery → Policy Lifecycle → Enforcement → Integrations → Deep Dive Labs](assets/csw-learning-library-map.png)
-
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
 
 Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **84-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
