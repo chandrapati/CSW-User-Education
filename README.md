@@ -197,7 +197,7 @@ Pick the lane that matches your time and role.
 
 > **Video attributions:** All videos linked in this repository are the property of their respective creators and channels. Full credit to:
 > - **Jason Maynard** — ["How Hard Can It Be?" CSW series](https://www.youtube.com/@jasonmaynard8773) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (Modules 1–8, and deep-dive content in Modules 3, 5, 6, 7, 11, 13, 16)
-> - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15)
+> - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15). Particular thanks to **Jorge Quintero** for the [ACI Micro Segmentation with Secure Workload](https://youtu.be/2nI1wU83pqY) series (Module 7).
 > - **BarrySecure** — [BarrySecure YouTube channel](https://www.youtube.com/@BarrySecure) (CSW 101 overview demo)
 >
 > This repo curates and organizes their publicly available content into a structured learning path. No content has been reproduced or modified — all links go directly to the original videos.

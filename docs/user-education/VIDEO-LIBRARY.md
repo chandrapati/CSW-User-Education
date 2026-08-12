@@ -114,6 +114,7 @@ Watch only the rows relevant to the customer POV.
 | [🎬 Algosec Integration](https://www.youtube.com/watch?v=FUyESTLLZE8) | Firewall-policy lifecycle alongside CSW. |
 | [🎬 ISE (In Action)](https://www.youtube.com/watch?v=KUJfuuhP1dc) | User and device identity from Cisco ISE. |
 | [🎬 FMC Integration with Edge / Ingest / Appliance](https://youtu.be/13AZ33dpCxU) | FMC through Edge, Ingest, and appliance paths. |
+| [🎬 ACI Micro Segmentation with Secure Workload — Part 1](https://youtu.be/2nI1wU83pqY) | **Newest ACI content.** Native ACI connector, endpoint and policy discovery, ESG contract enforcement through APIC, and continuous leaf TCAM monitoring. Presented by Jorge Quintero (Cisco TME). |
 | [🎬 ACI and CSW Integration](https://www.youtube.com/watch?v=u7jh3Zw1hlg) | ACI fabric policy with workload segmentation. |
 | [🎬 Splunk Integration (SIEM)](https://youtu.be/CRnkH9imTZk) | Three patterns: Cisco Security Cloud App for baseline dashboards/datasets, CSW → Splunk Syslog alerts, and Splunk-driven Python against the CSW API for arbitrary metadata. |
 | [🎬 CI/CD Pipeline Integration](https://www.youtube.com/watch?v=0wsSA69ol0M) | Treat CSW like any other declarative system: labels, scopes, and policy live in git and reach the tenant through pipeline-driven API calls. |

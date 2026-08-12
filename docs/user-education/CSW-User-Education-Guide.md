@@ -275,6 +275,7 @@ Videos are listed in the order that builds CSW skills fastest — not grouped by
 | 30 | 28 | Algosec Integration | Firewall-policy lifecycle. | [Watch](https://www.youtube.com/watch?v=FUyESTLLZE8) |
 | 31 | 29 | ISE (In Action) | Identity from Cisco ISE. | [Watch](https://www.youtube.com/watch?v=KUJfuuhP1dc) |
 | 32 | 30 | FMC / Edge / Ingest / Appliance | FMC integration paths. | [Watch](https://youtu.be/13AZ33dpCxU) |
+| — | — | ACI Micro Segmentation with Secure Workload — Part 1 | **Newest ACI content — watch before the entry below.** Native ACI connector, endpoint and policy discovery, ESG contract enforcement via APIC, and continuous leaf TCAM monitoring. Presented by Jorge Quintero (Cisco TME). | [Watch](https://youtu.be/2nI1wU83pqY) |
 | 33 | 31 | ACI and CSW Integration | ACI + workload segmentation. | [Watch](https://www.youtube.com/watch?v=u7jh3Zw1hlg) |
 | 34 | 35 | Splunk Integration (SIEM) | Cisco Security Cloud App for baseline datasets, CSW → Splunk Syslog alerts, plus Splunk-driven Python against the CSW API. | [Watch](https://youtu.be/CRnkH9imTZk) |
 | 35 | 36 | CI/CD Pipeline Integration | Labels, scopes, and policies as code in git; pipeline-driven API calls keep the CSW tenant in sync. | [Watch](https://www.youtube.com/watch?v=0wsSA69ol0M) |
