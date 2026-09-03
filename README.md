@@ -197,7 +197,7 @@ Pick the lane that matches your time and role.
 
 > **Video attributions:** All videos linked in this repository are the property of their respective creators and channels. Full credit to:
 > - **Jason Maynard** — ["How Hard Can It Be?" CSW series](https://www.youtube.com/@jasonmaynard8773) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (Modules 1–8, and deep-dive content in Modules 3, 5, 6, 7, 11, 13, 16)
-> - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15). Particular thanks to **Jorge Quintero** for the [ACI Micro Segmentation with Secure Workload](https://youtu.be/2nI1wU83pqY) series (Module 7).
+> - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15). Particular thanks to **Jorge Quintero** for the **ACI Microsegmentation with Secure Workload** series — [Part 1](https://youtu.be/2nI1wU83pqY) (connector, discovery, ESG enforcement, TCAM) and [Part 2](https://www.youtube.com/watch?v=zRt9X9bGm8c) (firewall insertion modes, agent-based microsegmentation, virtual patching with Secure Firewall) — Module 7.
 > - **BarrySecure** — [BarrySecure YouTube channel](https://www.youtube.com/@BarrySecure) (CSW 101 overview demo)
 >
 > This repo curates and organizes their publicly available content into a structured learning path. No content has been reproduced or modified — all links go directly to the original videos.
@@ -262,7 +262,7 @@ Hands-on integration and deployment guides — follow these top to bottom to bui
 | [📘 AnyConnect NVM](https://github.com/chandrapati/csw-anyconnect-nvm) | Endpoint process flows + user identity via NVM | Endpoint telemetry |
 | [📘 ServiceNow CMDB](https://github.com/chandrapati/csw-servicenow-integration) | ServiceNow CMDB label enrichment for workload scopes | CMDB-driven policy |
 | [📘 Infoblox](https://github.com/chandrapati/csw-infoblox-integration) | Infoblox IPAM/DNS extensible-attribute label enrichment | IPAM/DNS-driven policy |
-| [📘 DNS](https://github.com/chandrapati/csw-dns-integration) | AXFR zone-transfer hostname labels (`orchestrator_system/dns_name`) for scopes/policy | Hostname-driven policy |
+| [📘 DNS](https://github.com/chandrapati/csw-dns-integration) | AXFR zone-transfer hostname labels (`orchestrator_system/dns_name`) for scopes/policy — includes a screenshot-driven **Microsoft Active Directory / Windows DNS** walkthrough (SaaS + Secure Connector) | Hostname-driven policy |
 | [📘 F5 BIG-IP](https://github.com/chandrapati/csw-f5-integration) | F5 virtual-server labels, policy enforcement, IPFIX flow visibility | Load balancer segmentation |
 | [📘 NetScaler ADC](https://github.com/chandrapati/csw-netscaler-integration) | NetScaler LB virtual-server labels, ACL enforcement + AppFlow/IPFIX flow visibility | Load balancer segmentation |
 | [📘 AWS Connector](https://github.com/chandrapati/csw-aws-connector) | EC2 tag ingestion + VPC flow logs + Security Group enforcement | AWS workloads |
