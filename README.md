@@ -153,6 +153,7 @@ Pick the lane that matches your time and role.
 | **30 minutes** | Add [🎬 Application Dependency Mapping & Policy Analysis](https://www.youtube.com/watch?v=Jzzblea25UA) — the primary value of CSW: discover what talks to what, then derive policy. |
 | **2 hours** | Modules 1–4 in the [Video Library](#video-library-learning-path-order) (foundations through core policy workflow). |
 | **A POV is on the table** | Skim Core CSW Training, watch [🎬 Production and Test Risk Reduction](https://www.youtube.com/watch?v=HKT18Ylt4IY) plus the integration videos that match the customer stack (firewall, F5, ISE, FMC). Then open [`docs/user-education/CSW-User-Education-Guide.md`](docs/user-education/CSW-User-Education-Guide.md) for the onboarding runbook and POV evidence checklist. |
+| **Running the POV yourself (SE)** | Open [📘 **CSW-POV-Playbook**](https://github.com/chandrapati/CSW-POV-Playbook) — a self-service, **30-day** field guide any SE can execute end to end: scope → visibility → policy modeling → safe enforcement → executive readout, with week-by-week steps, CSV label import, an Internal/External scope design, and fill-in templates. |
 | **Secure Firewall + NetFlow in scope** | Start with [📘 **CSW-Secure-Firewall-Integration-Guide**](https://github.com/chandrapati/CSW-Secure-Firewall-Integration-Guide) — step-by-step NSEL ingest and FMC enforcement with linked YouTube videos. |
 | **Healthcare / Epic EHR POV** | Open [📘 **CSW-Epic-Microsegmentation-Guide**](https://github.com/chandrapati/CSW-Epic-Microsegmentation-Guide) — phased Epic tier microsegmentation playbook (visibility → policy → enforcement → operations). |
 
@@ -283,6 +284,7 @@ Learning paths, reference material, and day-2 tooling:
 | Resource | Description | Best for |
 |----------|-------------|---------|
 | [📘 User Education](https://github.com/chandrapati/CSW-User-Education) | Onboarding guides, concept explainers, and curated video library | New CSW users |
+| [📘 POV Playbook](https://github.com/chandrapati/CSW-POV-Playbook) | Self-service **30-day** field guide to run a CSW POV end to end (scope → visibility → policy → enforcement → readout) with CSV label import + Internal/External scope design | SEs running a POV |
 | [📘 Compliance Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) | Map CSW controls to NIST, PCI-DSS, HIPAA, CIS | Compliance & audit |
 | [📘 Tenant Insights](https://github.com/chandrapati/CSW-Tenant-Insights) | Tenant-level reporting and analytics | Visibility metrics |
 | [📘 Operations Toolkit](https://github.com/chandrapati/CSW-Operations-Toolkit) | Day-2 ops scripts: health checks, reporting, policy analysis | Ongoing operations |
@@ -290,3 +292,5 @@ Learning paths, reference material, and day-2 tooling:
 
 > **Suggested customer journey:**
 > User Education → Agent Installation → Kubernetes / OpenShift → Policy Lifecycle → ISE/pxGrid → ServiceNow CMDB → Infoblox → F5 BIG-IP → NetScaler ADC → Splunk Integration → Compliance Mapping → Operations Toolkit
+>
+> **Running a POV?** Follow the **[CSW-POV-Playbook](https://github.com/chandrapati/CSW-POV-Playbook)** — a 30-day, self-service SE runbook that threads these resources together end to end.
