@@ -6,7 +6,7 @@
 
 > **Disclaimer:** This repository is **not** official Cisco product documentation. It is companion learning material maintained for customer and partner education. Always validate design, scope, and supported features against your tenant's in-product documentation and [Cisco Secure Workload product documentation](https://www.cisco.com/c/en/us/products/security/workload-security/index.html) before production decisions.
 
-Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **84-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
+Cisco Secure Workload is a workload visibility and micro-segmentation platform. It discovers how applications communicate, turns that into label-based policy, and lets teams roll out least-privilege segmentation across data centers, public cloud, containers, and supported workload environments — without breaking the apps. This repo gives you everything you need to learn it: a written guide (Markdown / Word / PDF), a curated **86-entry** video catalog with direct links, an onboarding runbook, and discovery and evidence checklists for POVs.
 
 > **In one sentence:** CSW exists so that when — not if — one workload is compromised, the attacker cannot reach the next one.
 
@@ -161,7 +161,7 @@ Pick the lane that matches your time and role.
 
 > **Legend:** 🎬 video · 📘 guide · 📄 doc
 
-**84 curated videos across 16 modules**, ordered so CSW skills build fastest: concepts → agents → visibility → policy → security outcomes → environment-specific depth. The map below charts the journey as themed "islands"; the full catalog lives on its own page.
+**86 curated videos across 16 modules**, ordered so CSW skills build fastest: concepts → agents → visibility → policy → security outcomes → environment-specific depth. The map below charts the journey as themed "islands"; the full catalog lives on its own page.
 
 ![CSW video learning library — an island-map journey across the CSW learning path: Start Here → Getting Started → Agent Install → Scopes & Labels → ADM Discovery → Policy Lifecycle → Enforcement → Integrations → Microseg Milestone](docs/user-education/csw-learning-journey.png)
 
@@ -200,6 +200,7 @@ Pick the lane that matches your time and role.
 > - **Jason Maynard** — ["How Hard Can It Be?" CSW series](https://www.youtube.com/@jasonmaynard8773) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (Modules 1–8, and deep-dive content in Modules 3, 5, 6, 7, 11, 13, 16)
 > - **Jorge Quintero, Jason Lunde & Amandeep Singh** (Cisco TMEs) — [Cisco Secure Workload official YouTube channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15). Particular thanks to **Jorge Quintero** for the **ACI Microsegmentation with Secure Workload** series — [Part 1](https://youtu.be/2nI1wU83pqY) (connector, discovery, ESG enforcement, TCAM) and [Part 2](https://www.youtube.com/watch?v=zRt9X9bGm8c) (firewall insertion modes, agent-based microsegmentation, virtual patching with Secure Firewall) — Module 7.
 > - **BarrySecure** — [BarrySecure YouTube channel](https://www.youtube.com/@BarrySecure) (CSW 101 overview demo)
+> - **Timothy Roth (CCIETIM)** — [Timothy Roth YouTube channel](https://www.youtube.com/@TimothyRoth) (Module 6 — Segmenting PHP Workloads with CVE and Packages)
 >
 > This repo curates and organizes their publicly available content into a structured learning path. No content has been reproduced or modified — all links go directly to the original videos.
 
@@ -208,7 +209,7 @@ Pick the lane that matches your time and role.
 | Path | What it is |
 |---|---|
 | [`README.md`](README.md) | This file: intro, value story, and a compact video-library module index. |
-| [`docs/user-education/VIDEO-LIBRARY.md`](docs/user-education/VIDEO-LIBRARY.md) | Full 84-video catalog (16 modules) in learning-path order. |
+| [`docs/user-education/VIDEO-LIBRARY.md`](docs/user-education/VIDEO-LIBRARY.md) | Full 86-video catalog (16 modules) in learning-path order. |
 | [`docs/user-education/CSW-User-Education-Guide.md`](docs/user-education/CSW-User-Education-Guide.md) | Full Markdown guide: intro, concepts, video library, onboarding runbook, discovery questions, POV evidence checklist, pitfalls, talk track. |
 | [`docs/user-education/CSW-Secure-Firewall-Integration-Guide.md`](docs/user-education/CSW-Secure-Firewall-Integration-Guide.md) | Step-by-step Secure Firewall NSEL ingest + FMC enforcement integration with video links. |
 | [`docs/user-education/CSW-User-Education-Guide.docx`](docs/user-education/CSW-User-Education-Guide.docx) | Generated Word version of the guide. |

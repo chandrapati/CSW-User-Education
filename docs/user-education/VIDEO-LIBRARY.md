@@ -6,7 +6,7 @@
 
 > **Legend:** 🎬 video · 📘 guide · 📄 doc
 
-84 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**; **Module 16 covers Incident Response scenarios**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
+86 videos and references arranged in the order that builds CSW skills fastest: concepts first, then agents, then visibility → policy, then security outcomes, then environment-specific depth. Modules 1–8 are the original learning-path series; **Modules 9–15 add the newer official Cisco Secure Workload channel demos (2025–2026)**; **Module 16 covers Incident Response scenarios**. **Watch top to bottom** within each module; skip modules that do not match your POV (for example, skip Module 2 VDI if you are not deploying to golden-image desktops).
 
 ---
 
@@ -92,6 +92,17 @@ Deep dives when the customer environment matches.
 | [🎬 Web Services Mandate: Prod/Test Isolation](https://www.youtube.com/watch?v=xu78UvPXbMw) | Enforce that production and test environments cannot communicate. |
 | [🎬 Retail Web Services Mandate: Limit Web Access](https://www.youtube.com/watch?v=i9EI9FpuDeE) | Restrict outbound web access for retail workloads using scoped mandates. |
 | [🎬 Deep Dive Segmentation](https://www.youtube.com/watch?v=8zcKVLJQuzw) | Advanced segmentation walkthrough: absolute policy, catch-alls, and enforcement tuning. |
+
+#### Segmenting PHP Workloads with CVE and Packages
+
+Find the workloads running a vulnerable package or CVE, check which are internet-exposed, then contain them with least-privilege policy while the patch is still outstanding. Presented by **Timothy Roth (CCIETIM)**.
+
+| Video | Description |
+|---|---|
+| [🎬 Discover and Segment PHP servers with Cisco Secure Workload](https://youtu.be/OSnb8eNuJHE) | Identify the servers running PHP, see which are publicly exposed, and build segmentation policy that limits access and lateral movement until PHP is patched. |
+| [🎬 Discover and Segment Vulnerabilities with CSW](https://www.youtube.com/watch?v=AMrtjekxHto) | The general discover-then-segment workflow — find vulnerable workloads by CVE or installed package, then contain them with policy. The PHP walkthrough above is one instance of it. |
+
+> **Companion field reference:** [📘 **chandrapati/csw-php-workloads**](https://github.com/chandrapati/csw-php-workloads) — package/CVE inventory filters (`Package Info = php#…`), exposure review, sample contain-until-patched policies, and the "PHP Suspicious Behavior" forensic rule.
 
 ### Module 7 — Integrations (pick what matches the stack)
 
@@ -237,3 +248,4 @@ Use CSW forensics, flow evidence, and MITRE ATT&CK–mapped scenarios to investi
 > - **Jason Maynard** ([@jasonmaynard8773](https://www.youtube.com/@jasonmaynard8773)) — "How Hard Can It Be?" CSW series (Modules 1–8) and the [Cisco Secure Workload deep-dive playlist](https://www.youtube.com/playlist?list=PLyf18hdY22ESRYAoYLcJaehao1W8y9XFv) (additional content in Modules 3, 5, 6, 7, 11, 13, 16). His recent channel uploads have shifted toward Cisco Secure Access / SOC topics.
 > - **Jorge Quintero, Jason Lunde & Amandeep Singh** — Cisco TMEs publishing on the official [Cisco Secure Workload channel](https://www.youtube.com/@ciscosecureworkload) (Modules 9–15). Use these for the most current product behavior.
 > - **BarrySecure** ([@BarrySecure](https://www.youtube.com/@BarrySecure)) — Cisco security practitioner demos covering CSW and the broader Cisco security portfolio (CSW 101 intro).
+> - **Timothy Roth (CCIETIM)** ([@TimothyRoth](https://www.youtube.com/@TimothyRoth)) — discover-and-segment walkthroughs for vulnerable workloads, PHP and CVE/package-based (Module 6, "Segmenting PHP Workloads with CVE and Packages").
